@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/consystec/cam/ws/soap/ProcessLog.java=UTF-8
+encoding//src/main/java/com/consystec/cam/ws/soap/RetornaFactura.java=UTF-8
+encoding//src/main/java/com/consystec/cam/ws/soap/RetornaFacturaLocator.java=UTF-8
+encoding//src/main/java/com/consystec/cam/ws/soap/RetornaFacturaPortType.java=UTF-8
+encoding//src/main/java/com/consystec/cam/ws/soap/RetornaFacturaPortTypePortBindingStub.java=UTF-8
