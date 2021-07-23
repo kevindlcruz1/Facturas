@@ -53,7 +53,9 @@ public class TcFacturasVantiveModel {
 	private int ENVIO_RI;
 	private int FACTURA_PROCESADA;
 	private int CONTRIBUCION_SEG;
+	private double idDoc;
 
+	
 	public int getTCFACTURASCABID() {
 		return TCFACTURASCABID;
 	}
@@ -359,5 +361,11 @@ public class TcFacturasVantiveModel {
 	}
 	public void setCONTRIBUCION_SEG(int cONTRIBUCION_SEG) {
 		CONTRIBUCION_SEG = cONTRIBUCION_SEG;
+	}
+	public double getIdDoc() {
+		return idDoc;
+	}
+	public void setIdDoc(double idDoc) {
+		this.idDoc = idDoc;
 	}
 }

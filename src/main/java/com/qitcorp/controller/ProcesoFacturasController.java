@@ -1,6 +1,7 @@
 package com.qitcorp.controller;
 
 import java.net.MalformedURLException;
+
 import java.net.URL;
 import java.rmi.RemoteException;
 import java.util.Iterator;
@@ -10,11 +11,14 @@ import java.util.logging.Level;
 import org.apache.axis.AxisFault;
 import org.apache.log4j.Logger;
 
-import com.consystec.cam.ws.soap.RetornaFacturaLocator;
-import com.consystec.cam.ws.soap.RetornaFacturaPortType;
-import com.consystec.cam.ws.soap.RetornaFacturaPortTypePortBindingStub;
+import com.qit.www.wsdoc1.intf.client.WsCreateBillRequest;
+import com.qit.www.wsdoc1.intf.client.WsCreateBillResponse;
+import com.qit.www.wsdoc1.intf.client.WsDoc1;
+import com.qit.www.wsdoc1.intf.client.WsDoc1Service;
+import com.qit.www.wsdoc1.intf.client.WsDoc1ServiceLocator;
+import com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub;
 import com.qitcorp.dao.ProcesoFacturasDao;
-import com.qitcorp.model.CBHistorialAccionModel;
+
 import com.qitcorp.model.TcFacturasVantiveModel;
 import com.qitcorp.util.Tools;
 
@@ -26,30 +30,29 @@ public class ProcesoFacturasController {
 
 	
 	
-	public String requestWsFacturasVantive(List<TcFacturasVantiveModel> parametros, TcFacturasVantiveModel historial) {
-		RetornaFacturaLocator servicio = new RetornaFacturaLocator();
-		RetornaFacturaPortType wsExec;
+	public WsCreateBillResponse requestWsFacturasVantive(List<TcFacturasVantiveModel> parametro,TcFacturasVantiveModel facturas ) {
+		WsDoc1Service servicio = new WsDoc1ServiceLocator();
+		WsDoc1 wsExec;
 
 		try {
-			wsExec = new RetornaFacturaPortTypePortBindingStub(new URL(servicio.getRetornaFacturaPortTypePortAddress()), servicio);
+			wsExec = new WsDoc1Soap11Stub(new URL(servicio.getWsDoc1Soap11Address()), servicio);
 			
 			//Se valida si los 3 campos telefono traen valor o vienen null
-			int BILL_REF_NO =  obtieneBILL_REF_NO (historial);
-
-			logger.info("Parametros request => TIPOLOGIAGACID: "+Tools.obtenerParametro("TIPOLOGIAGACID", parametros));
+			//int BILL_REF_NO = facturas.getTCFACTURASCABID();
+			WsCreateBillRequest request = new WsCreateBillRequest();
+			request.setBill_ref_no(0);
 			
-			String response = wsExec.crearCasoCerrado(	Tools.obtenerParametro("TIPOLOGIAGACID", parametros));	
+			WsCreateBillResponse response = wsExec.wsCreateBill(request);
+					                              
 			
-			logger.info("Respuesta de WS CrearCasoCerrado: "+response);
+					logger.info("Respuesta de WS facturas: "+response.getMensaje());
 			return response;
 		} catch (AxisFault e) {
-			logger.error("AxisError => ", e);
+			logger.error(e);
 		} catch (MalformedURLException e) {
-			logger.error("MalformedURLException => ", e);
+			logger.error(e);
 		} catch (RemoteException e) {
-			logger.error("RemoteException => ", e);
-		} catch (Exception e) {
-			logger.error("General error => ", e);
+			logger.error(e);
 		}
 		
 		return null;
@@ -59,7 +62,7 @@ public class ProcesoFacturasController {
 		List<TcFacturasVantiveModel> list = objDao.obtenerFacturasVantive();
 
 		if (list != null && list.size() > 0) {
-			List<TcFacturasVantiveModel> parametros = ProcesoFacturasDao.obtenerFacturasVantive();
+			List<TcFacturasVantiveModel> parametros = ProcesoFacturasDao.obtenerParametrosWS();
 			Iterator<TcFacturasVantiveModel> iterator = list.iterator();
 			while (iterator.hasNext()) {
 				TcFacturasVantiveModel facturas = iterator.next();
@@ -86,18 +89,6 @@ public class ProcesoFacturasController {
 			return result;
 		}
 		
-		public int obtieneBILL_REF_NO(TcFacturasVantiveModel historial) {
-			if(historial.getBILL_REF_NO() != null) {
-				return historial.getTelefonoBanco();
-			} else if(historial.getTelefonoTelca()!= null) {
-				return historial.getTelefonoTelca();
-			} else if(historial.getTelefono()!= null) {
-				return historial.getTelefono();
-			} else {
-				return 0;
-			}
-		}
-
 		
 
 }

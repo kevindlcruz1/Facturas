@@ -2,7 +2,7 @@ package com.qitcorp.util;
 
 import java.util.List;
 
-
+//import com.qitcorp.model.CBParametrosModel;
 import com.qitcorp.model.TcFacturasVantiveModel;
 
 public class Tools {
@@ -22,20 +22,21 @@ public class Tools {
 	
 	
 	//Obtener parametro para WS
-		public static int obtenerParametro(int parametro, List<TcFacturasVantiveModel> parametros) {
+		/*public static String obtenerParametro(String parametro, List<TcFacturasVantiveModel> parametros) {
 
 			if (parametros != null && parametros.size() > 0) {
 				for (TcFacturasVantiveModel item : parametros) {
-					if (item.getBILL_REF_NO()==(parametro)) {
-						return item.getBILL_REF_NO();
+					if (item.getObjeto().equals(parametro)) {
+						logger.info("OBJETO => "+item.getObjeto()+" - VALOR OBJETO1 => "+item.getValorObjeto1());
+						return item.getValorObjeto1();
 					}
 				}
 			} else {
-				return 0;
+				return "";
 			}
 
-			return 0;
-		}
+			return "";
+		}*/
 		
 		public static final String FACCURAS_VANTIVE_SP = "{CALL SWBAPPS.TCG_FNC_WS_PKG.WS_CREA_DOC1_PRO(?)}";
 		

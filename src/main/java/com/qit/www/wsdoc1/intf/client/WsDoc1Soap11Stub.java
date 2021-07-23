@@ -1,13 +1,13 @@
 /**
- * RetornaFacturaPortTypePortBindingStub.java
+ * WsDoc1Soap11Stub.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package com.consystec.cam.ws.soap;
+package com.qit.www.wsdoc1.intf.client;
 
-public class RetornaFacturaPortTypePortBindingStub extends org.apache.axis.client.Stub implements com.consystec.cam.ws.soap.RetornaFacturaPortType {
+public class WsDoc1Soap11Stub extends org.apache.axis.client.Stub implements com.qit.www.wsdoc1.intf.client.WsDoc1 {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();
@@ -24,34 +24,28 @@ public class RetornaFacturaPortTypePortBindingStub extends org.apache.axis.clien
         org.apache.axis.description.OperationDesc oper;
         org.apache.axis.description.ParameterDesc param;
         oper = new org.apache.axis.description.OperationDesc();
-        oper.setName("generar");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "country_code"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
-        param.setOmittable(true);
+        oper.setName("WsCreateBill");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://www.qit.com/wsdoc1/intf/client", "WsCreateBillRequest"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.qit.com/wsdoc1/intf/client", ">WsCreateBillRequest"), com.qit.www.wsdoc1.intf.client.WsCreateBillRequest.class, false, false);
         oper.addParameter(param);
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "id_doc"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"), double.class, false, false);
-        oper.addParameter(param);
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "xml_data"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
-        param.setOmittable(true);
-        oper.addParameter(param);
-        oper.setReturnType(new javax.xml.namespace.QName("http://soap.ws.cam.consystec.com/", "processLog"));
-        oper.setReturnClass(com.consystec.cam.ws.soap.ProcessLog.class);
-        oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
-        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.qit.com/wsdoc1/intf/client", ">WsCreateBillResponse"));
+        oper.setReturnClass(com.qit.www.wsdoc1.intf.client.WsCreateBillResponse.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://www.qit.com/wsdoc1/intf/client", "WsCreateBillResponse"));
+        oper.setStyle(org.apache.axis.constants.Style.DOCUMENT);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[0] = oper;
 
     }
 
-    public RetornaFacturaPortTypePortBindingStub() throws org.apache.axis.AxisFault {
+    public WsDoc1Soap11Stub() throws org.apache.axis.AxisFault {
          this(null);
     }
 
-    public RetornaFacturaPortTypePortBindingStub(java.net.URL endpointURL, javax.xml.rpc.Service service) throws org.apache.axis.AxisFault {
+    public WsDoc1Soap11Stub(java.net.URL endpointURL, javax.xml.rpc.Service service) throws org.apache.axis.AxisFault {
          this(service);
          super.cachedEndpoint = endpointURL;
     }
 
-    public RetornaFacturaPortTypePortBindingStub(javax.xml.rpc.Service service) throws org.apache.axis.AxisFault {
+    public WsDoc1Soap11Stub(javax.xml.rpc.Service service) throws org.apache.axis.AxisFault {
         if (service == null) {
             super.service = new org.apache.axis.client.Service();
         } else {
@@ -71,9 +65,16 @@ public class RetornaFacturaPortTypePortBindingStub extends org.apache.axis.clien
             java.lang.Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
             java.lang.Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
             java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
-            qName = new javax.xml.namespace.QName("http://soap.ws.cam.consystec.com/", "processLog");
+            qName = new javax.xml.namespace.QName("http://www.qit.com/wsdoc1/intf/client", ">WsCreateBillRequest");
             cachedSerQNames.add(qName);
-            cls = com.consystec.cam.ws.soap.ProcessLog.class;
+            cls = com.qit.www.wsdoc1.intf.client.WsCreateBillRequest.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.qit.com/wsdoc1/intf/client", ">WsCreateBillResponse");
+            cachedSerQNames.add(qName);
+            cls = com.qit.www.wsdoc1.intf.client.WsCreateBillResponse.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
@@ -144,7 +145,7 @@ public class RetornaFacturaPortTypePortBindingStub extends org.apache.axis.clien
         }
     }
 
-    public com.consystec.cam.ws.soap.ProcessLog generar(java.lang.String country_code, double id_doc, java.lang.String xml_data) throws java.rmi.RemoteException {
+    public com.qit.www.wsdoc1.intf.client.WsCreateBillResponse wsCreateBill(com.qit.www.wsdoc1.intf.client.WsCreateBillRequest wsCreateBillRequest) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -156,11 +157,11 @@ public class RetornaFacturaPortTypePortBindingStub extends org.apache.axis.clien
         _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
         _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
         _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
-        _call.setOperationName(new javax.xml.namespace.QName("http://soap.ws.cam.consystec.com/", "generar"));
+        _call.setOperationName(new javax.xml.namespace.QName("", "WsCreateBill"));
 
         setRequestHeaders(_call);
         setAttachments(_call);
- try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {country_code, new java.lang.Double(id_doc), xml_data});
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {wsCreateBillRequest});
 
         if (_resp instanceof java.rmi.RemoteException) {
             throw (java.rmi.RemoteException)_resp;
@@ -168,9 +169,9 @@ public class RetornaFacturaPortTypePortBindingStub extends org.apache.axis.clien
         else {
             extractAttachments(_call);
             try {
-                return (com.consystec.cam.ws.soap.ProcessLog) _resp;
+                return (com.qit.www.wsdoc1.intf.client.WsCreateBillResponse) _resp;
             } catch (java.lang.Exception _exception) {
-                return (com.consystec.cam.ws.soap.ProcessLog) org.apache.axis.utils.JavaUtils.convert(_resp, com.consystec.cam.ws.soap.ProcessLog.class);
+                return (com.qit.www.wsdoc1.intf.client.WsCreateBillResponse) org.apache.axis.utils.JavaUtils.convert(_resp, com.qit.www.wsdoc1.intf.client.WsCreateBillResponse.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {

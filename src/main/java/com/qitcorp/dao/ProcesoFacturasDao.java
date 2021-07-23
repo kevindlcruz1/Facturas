@@ -21,37 +21,36 @@ public class ProcesoFacturasDao {
 
 	private static final Logger logger = Logger.getLogger("log4j.properties");
 
-	
-	
 	// Obtener parametros para consumo de WS Pagos y Servicio
-		public static List<TcFacturasVantiveModel> obtenerParametrosWS() {
-			List<TcFacturasVantiveModel> listResult = new ArrayList<TcFacturasVantiveModel>();
-			Connection conn = null;
-			PreparedStatement ps = null;
-			ResultSet rst = null;
-			TcFacturasVantiveModel model = null;
-			try {
+	public static List<TcFacturasVantiveModel> obtenerParametrosWS() {
+		List<TcFacturasVantiveModel> listResult = new ArrayList<TcFacturasVantiveModel>();
+		Connection conn = null;
+		PreparedStatement ps = null;
+		ResultSet rst = null;
+		TcFacturasVantiveModel model = null;
+		try {
 
-				conn = ConnectionDB.getConnection();
-				ps = conn.prepareStatement(Tools.obtener_tc_facturas_vantive_vw);
-				rst = ps.executeQuery();
-				while (rst.next()) {
-					model = new TcFacturasVantiveModel();
-					model.setBILL_REF_NO(rst.getInt(1));
+			conn = ConnectionDB.getConnection();
+			ps = conn.prepareStatement(Tools.obtener_tc_facturas_vantive_vw);
+			rst = ps.executeQuery();
+			while (rst.next()) {
+				model = new TcFacturasVantiveModel();
+				model.setBILL_REF_NO(rst.getInt(1));
 
-					listResult.add(model);
-				}
-			} catch (SQLException e) {
-				logger.error(e);
-			} catch (Exception e) {
-				logger.error(e);
-			} finally {
-				finalizaConexion(conn, ps, null, rst);
+				listResult.add(model);
 			}
-
-			return listResult;
+		} catch (SQLException e) {
+			logger.error(e);
+		} catch (Exception e) {
+			logger.error(e);
+		} finally {
+			finalizaConexion(conn, ps, null, rst);
 		}
-	public static List<TcFacturasVantiveModel> obtenerFacturasVantive() {
+
+		return listResult;
+	}
+
+	public List<TcFacturasVantiveModel> obtenerFacturasVantive() {
 		List<TcFacturasVantiveModel> lst = new ArrayList<TcFacturasVantiveModel>();
 		Statement stmt = null;
 		ResultSet rst = null;
@@ -66,7 +65,7 @@ public class ProcesoFacturasDao {
 			while (rst.next()) {
 				obj = new TcFacturasVantiveModel();
 				obj.setTCFACTURASCABID(rst.getInt(TcFacturasVantiveModel.FIELD_TCFACTURASCABID));
-				lst.add(obj);				
+				lst.add(obj);
 			}
 		} catch (Exception e) {
 			logger.error(e);
@@ -102,10 +101,11 @@ public class ProcesoFacturasDao {
 			} catch (SQLException e) {
 				logger.error(e);
 			}
-		
+
 	}
+
 	public static String ejecutaApldesRecargaSP(int cbhistorialaccionid) {
-		boolean result = (Boolean) null;
+		boolean result = false;
 		String result1 = "";
 		Connection conn = null;
 		CallableStatement cmd = null;
@@ -114,10 +114,10 @@ public class ProcesoFacturasDao {
 
 			cmd = conn.prepareCall(Tools.FACCURAS_VANTIVE_SP);
 			cmd.setInt(1, cbhistorialaccionid);
-			
+
 			result = cmd.executeUpdate() > 0;
-			//result1 = result;
-			logger.info( "Ejecuta => "+Tools.FACCURAS_VANTIVE_SP+" => resultado: "+result);
+			// result1 = result;
+			logger.info("Ejecuta => " + Tools.FACCURAS_VANTIVE_SP + " => resultado: " + result);
 		} catch (Exception e) {
 			logger.error(e);
 		} finally {
