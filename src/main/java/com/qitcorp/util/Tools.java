@@ -38,6 +38,6 @@ public class Tools {
 			return "";
 		}*/
 		
-		public static final String FACCURAS_VANTIVE_SP = "{CALL SWBAPPS.TCG_FNC_WS_PKG.WS_CREA_DOC1_PRO(?)}";
+		public static final String FACCURAS_VANTIVE_SP = "{CALL SWBAPPS.TCG_FNC_WS_PKG.WS_CREA_DOC1_PRO(?,?,?,?,?)}";
 		
 }

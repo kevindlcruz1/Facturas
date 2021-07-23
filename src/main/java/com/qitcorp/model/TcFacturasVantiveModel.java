@@ -54,6 +54,11 @@ public class TcFacturasVantiveModel {
 	private int FACTURA_PROCESADA;
 	private int CONTRIBUCION_SEG;
 	private double idDoc;
+	private String batchSize;
+	
+	private String outBatchSize; 
+	private String status;
+	private String respuesta; 
 
 	
 	public int getTCFACTURASCABID() {
@@ -367,5 +372,29 @@ public class TcFacturasVantiveModel {
 	}
 	public void setIdDoc(double idDoc) {
 		this.idDoc = idDoc;
+	}
+	public String getBatchSize() {
+		return batchSize;
+	}
+	public void setBatchSize(String batchSize) {
+		this.batchSize = batchSize;
+	}
+	public String getOutBatchSize() {
+		return outBatchSize;
+	}
+	public void setOutBatchSize(String outBatchSize) {
+		this.outBatchSize = outBatchSize;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getRespuesta() {
+		return respuesta;
+	}
+	public void setRespuesta(String respuesta) {
+		this.respuesta = respuesta;
 	}
 }

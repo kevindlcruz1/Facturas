@@ -1,62 +1,493 @@
-2021-07-22 14:23:06  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
-2021-07-22 14:23:06  [ main:39 ] - [ ERROR ]  java.io.FileNotFoundException: select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw  (El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos)
-2021-07-22 14:23:06  [ main:42 ] - [ ERROR ]  java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
-2021-07-22 14:23:06  [ main:44 ] - [ WARN ]  Lista de acciones vacia
-2021-07-22 14:23:06  [ main:44 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
-2021-07-22 14:27:54  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
-2021-07-22 14:27:54  [ main:6 ] - [ ERROR ]  java.io.FileNotFoundException: select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw  (El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos)
-2021-07-22 14:27:54  [ main:8 ] - [ ERROR ]  java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
-2021-07-22 14:27:54  [ main:8 ] - [ WARN ]  Lista de acciones vacia
-2021-07-22 14:27:54  [ main:8 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
-2021-07-22 14:31:02  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
-2021-07-22 14:31:02  [ main:13 ] - [ ERROR ]  java.io.FileNotFoundException: select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw  (El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos)
-2021-07-22 14:31:02  [ main:16 ] - [ ERROR ]  java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
-2021-07-22 14:31:02  [ main:17 ] - [ WARN ]  Lista de acciones vacia
-2021-07-22 14:31:02  [ main:17 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
-2021-07-22 14:33:03  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
-2021-07-22 14:33:03  [ main:6 ] - [ ERROR ]  java.io.FileNotFoundException: config.properties (El sistema no puede encontrar el archivo especificado)
-2021-07-22 14:33:03  [ main:7 ] - [ ERROR ]  java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
-2021-07-22 14:33:03  [ main:7 ] - [ WARN ]  Lista de acciones vacia
-2021-07-22 14:33:03  [ main:7 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
-2021-07-22 14:40:46  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
-2021-07-22 14:40:49  [ main:3088 ] - [ ERROR ]  java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+2021-07-23 08:31:30  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 08:31:51  [ main:21421 ] - [ ERROR ]  java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+2021-07-23 08:31:51  [ main:21424 ] - [ ERROR ]  java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
+2021-07-23 08:31:51  [ main:21425 ] - [ WARN ]  Lista de acciones vacia
+2021-07-23 08:31:51  [ main:21425 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-07-23 08:37:21  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 08:37:24  [ main:3294 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-07-23 08:37:31  [ main:9546 ] - [ ERROR ]  java.sql.SQLException: Missing IN or OUT parameter at index:: 2
+2021-07-23 08:37:31  [ main:9665 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23831350 Resultado => 
+2021-07-23 08:37:31  [ main:9665 ] - [ INFO ]  OBJETO FACTURAS: 0
+2021-07-23 08:37:31  [ main:9666 ] - [ INFO ]  Resultado de consumo: 
+2021-07-23 08:37:34  [ main:12505 ] - [ ERROR ]  java.sql.SQLException: Missing IN or OUT parameter at index:: 2
+2021-07-23 08:37:34  [ main:12645 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23831351 Resultado => 
+2021-07-23 08:37:34  [ main:12645 ] - [ INFO ]  OBJETO FACTURAS: 0
+2021-07-23 08:37:34  [ main:12645 ] - [ INFO ]  Resultado de consumo: 
+2021-07-23 08:37:37  [ main:15798 ] - [ ERROR ]  java.sql.SQLException: Missing IN or OUT parameter at index:: 2
+2021-07-23 08:37:37  [ main:15923 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23831372 Resultado => 
+2021-07-23 08:37:37  [ main:15924 ] - [ INFO ]  OBJETO FACTURAS: 0
+2021-07-23 08:37:37  [ main:15924 ] - [ INFO ]  Resultado de consumo: 
+2021-07-23 08:37:37  [ main:15924 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-07-23 08:44:13  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 08:44:17  [ main:3436 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-07-23 08:44:24  [ main:10302 ] - [ INFO ]  Ejecuta => {CALL SWBAPPS.TCG_FNC_WS_PKG.WS_CREA_DOC1_PRO(?,?,?,?,?)} => resultado: true
+2021-07-23 08:44:24  [ main:10430 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23831350 Resultado => 
+2021-07-23 08:44:24  [ main:10430 ] - [ INFO ]  OBJETO FACTURAS: 0
+2021-07-23 08:44:24  [ main:10431 ] - [ INFO ]  Resultado de consumo: 
+2021-07-23 08:44:27  [ main:13412 ] - [ INFO ]  Ejecuta => {CALL SWBAPPS.TCG_FNC_WS_PKG.WS_CREA_DOC1_PRO(?,?,?,?,?)} => resultado: true
+2021-07-23 08:44:27  [ main:13542 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23831351 Resultado => 
+2021-07-23 08:44:27  [ main:13542 ] - [ INFO ]  OBJETO FACTURAS: 0
+2021-07-23 08:44:27  [ main:13542 ] - [ INFO ]  Resultado de consumo: 
+2021-07-23 08:44:32  [ main:18460 ] - [ INFO ]  Ejecuta => {CALL SWBAPPS.TCG_FNC_WS_PKG.WS_CREA_DOC1_PRO(?,?,?,?,?)} => resultado: true
+2021-07-23 08:44:32  [ main:18588 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23831372 Resultado => 
+2021-07-23 08:44:32  [ main:18589 ] - [ INFO ]  OBJETO FACTURAS: 0
+2021-07-23 08:44:32  [ main:18589 ] - [ INFO ]  Resultado de consumo: 
+2021-07-23 08:44:32  [ main:18589 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-07-23 08:51:20  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 08:51:23  [ main:3304 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-07-23 08:51:23  [ main:3578 ] - [ WARN ]  Lista de acciones vacia
+2021-07-23 08:51:23  [ main:3578 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-07-23 08:52:29  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 08:52:33  [ main:3446 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-07-23 08:52:33  [ main:3720 ] - [ WARN ]  Lista de acciones vacia
+2021-07-23 08:52:33  [ main:3721 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-07-23 09:28:43  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 09:28:46  [ main:3312 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-07-23 09:28:46  [ main:3587 ] - [ WARN ]  Lista de la vista vacia
+2021-07-23 09:28:46  [ main:3587 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-07-23 09:48:50  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 09:48:53  [ main:3397 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-07-23 09:48:54  [ main:3702 ] - [ WARN ]  Lista de la vista vacia
+2021-07-23 09:48:54  [ main:3812 ] - [ DEBUG ]  find: resourceName='commons-logging.properties'
+2021-07-23 09:48:54  [ main:3813 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-07-23 09:48:54  [ main:3814 ] - [ DEBUG ]  Could not find resource: commons-logging.properties
+2021-07-23 09:48:54  [ main:3814 ] - [ DEBUG ]  find: resourceName='org/apache/commons/logging/commons-logging.properties'
+2021-07-23 09:48:54  [ main:3814 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-07-23 09:48:54  [ main:3814 ] - [ DEBUG ]  Could not find resource: org/apache/commons/logging/commons-logging.properties
+2021-07-23 09:48:54  [ main:3817 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.commons.logging.LogFactory'
+2021-07-23 09:48:54  [ main:3818 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.commons.logging.LogFactory'
+2021-07-23 09:48:54  [ main:3820 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-07-23 09:48:54  [ main:3821 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.commons.logging.LogFactory
+2021-07-23 09:48:54  [ main:3821 ] - [ DEBUG ]  find: className='org.apache.commons.logging.impl.LogFactoryImpl'
+2021-07-23 09:48:54  [ main:3822 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/developer/.p2/pool/plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar!/org/apache/commons/logging/impl/LogFactoryImpl.class'
+2021-07-23 09:48:54  [ main:3823 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.commons.logging.impl.LogFactoryImpl' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-07-23 09:48:54  [ main:3829 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory'
+2021-07-23 09:48:54  [ main:3830 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory', lookup property 'axis.EngineConfigFactory'
+2021-07-23 09:48:54  [ main:3830 ] - [ DEBUG ]  find: resourceName = 'org.apache.axis.EngineConfigurationFactory'
+2021-07-23 09:48:54  [ main:3831 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.EngineConfigurationFactory'
+2021-07-23 09:48:54  [ main:3831 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.EngineConfigurationFactory'
+2021-07-23 09:48:54  [ main:3831 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-07-23 09:48:54  [ main:3831 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.EngineConfigurationFactory
+2021-07-23 09:48:54  [ main:3832 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory', mapping to constants
+2021-07-23 09:48:54  [ main:3832 ] - [ DEBUG ]  find: className='org.apache.axis.configuration.EngineConfigurationFactoryServlet'
+2021-07-23 09:48:54  [ main:3833 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/developer/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/configuration/EngineConfigurationFactoryServlet.class'
+2021-07-23 09:48:54  [ main:3833 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.configuration.EngineConfigurationFactoryServlet' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-07-23 09:48:54  [ main:3837 ] - [ DEBUG ]  getBundle(org.apache.axis,org.apache.axis.i18n,resource,null,...)
+2021-07-23 09:48:54  [ main:3849 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US
+2021-07-23 09:48:54  [ main:3850 ] - [ DEBUG ]  Created org.apache.axis.i18n.resource, linked to parent null
+2021-07-23 09:48:54  [ main:3851 ] - [ DEBUG ]  getBundle(org.apache.axis,org.apache.axis.utils,resource,null,...)
+2021-07-23 09:48:54  [ main:3852 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.utils.resource, locale en_US
+2021-07-23 09:48:54  [ main:3852 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US
+2021-07-23 09:48:54  [ main:3852 ] - [ DEBUG ]  Root package not found, cross link to org.apache.axis.i18n.resource
+2021-07-23 09:48:54  [ main:3852 ] - [ DEBUG ]  Root package not found, cross link to org.apache.axis.i18n.resource
+2021-07-23 09:48:54  [ main:3853 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(engineConfigLoadFactory)
+2021-07-23 09:48:54  [ main:3853 ] - [ DEBUG ]  Factory org.apache.axis.configuration.EngineConfigurationFactoryServlet Ignored: unable to load/resolve class.
+2021-07-23 09:48:54  [ main:3853 ] - [ DEBUG ]  find: className='org.apache.axis.configuration.EngineConfigurationFactoryDefault'
+2021-07-23 09:48:54  [ main:3854 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/developer/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/configuration/EngineConfigurationFactoryDefault.class'
+2021-07-23 09:48:54  [ main:3854 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.configuration.EngineConfigurationFactoryDefault' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-07-23 09:48:54  [ main:3854 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(engineFactory)
+2021-07-23 09:48:54  [ main:3855 ] - [ DEBUG ]  Got EngineFactory: org.apache.axis.configuration.EngineConfigurationFactoryDefault
+2021-07-23 09:48:54  [ main:3858 ] - [ DEBUG ]  Enter: AxisEngine::init
+2021-07-23 09:48:54  [ main:3963 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+2021-07-23 09:48:54  [ main:3964 ] - [ DEBUG ]  Attachment support is enabled?  false
+2021-07-23 09:48:54  [ main:3964 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachDisabled)
+2021-07-23 09:48:54  [ main:3964 ] - [ WARN ]  Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-07-23 09:48:54  [ main:3970 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(oddDigits00)
+2021-07-23 09:48:54  [ main:3971 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(badChars01)
+2021-07-23 09:48:54  [ main:4025 ] - [ DEBUG ]  Exit: AxisEngine::init
+2021-07-23 09:48:54  [ main:4040 ] - [ DEBUG ]  @3d3e5463 added parameter >name:       {http://www.qit.com/wsdoc1/intf/client}WsCreateBillRequest
+typeEntry:  null
+mode:       IN
+position:   0
+isReturn:   false
+typeQName:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillRequest
+javaType:   class com.qit.www.wsdoc1.intf.client.WsCreateBillRequest
+inHeader:   false
+outHeader:  false
+@64a40280<total parameters:1
+2021-07-23 09:48:54  [ main:4041 ] - [ DEBUG ]  @3d3e5463setReturnType({http://www.qit.com/wsdoc1/intf/client}>WsCreateBillResponse)
+2021-07-23 09:48:54  [ main:4099 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(transport00)
+2021-07-23 09:48:54  [ main:4100 ] - [ DEBUG ]  Transport is org.apache.axis.transport.http.HTTPTransport@7d1cfb8b
+2021-07-23 09:48:54  [ main:4103 ] - [ DEBUG ]  Enter: Call::invoke(ns, meth, args)
+2021-07-23 09:48:54  [ main:4108 ] - [ DEBUG ]  operation=name:        WsCreateBill
+returnQName: {http://www.qit.com/wsdoc1/intf/client}WsCreateBillResponse
+returnType:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillResponse
+returnClass: class com.qit.www.wsdoc1.intf.client.WsCreateBillResponse
+elementQName:null
+soapAction:  null
+style:       document
+use:         literal
+numInParams: 1
+method:null
+ ParameterDesc[0]:
+  name:       {http://www.qit.com/wsdoc1/intf/client}WsCreateBillRequest
+  typeEntry:  null
+  mode:       IN
+  position:   0
+  isReturn:   false
+  typeQName:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillRequest
+  javaType:   class com.qit.www.wsdoc1.intf.client.WsCreateBillRequest
+  inHeader:   false
+  outHeader:  false
 
-2021-07-22 14:40:49  [ main:3090 ] - [ ERROR ]  java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
-2021-07-22 14:40:49  [ main:3090 ] - [ WARN ]  Lista de acciones vacia
-2021-07-22 14:40:49  [ main:3091 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
-2021-07-22 14:41:27  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
-2021-07-22 14:41:30  [ main:3267 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
-2021-07-22 14:41:33  [ main:6329 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
-2021-07-22 14:41:33  [ main:6484 ] - [ INFO ]  OBJETO HISTORIAL: 0
-2021-07-22 14:41:33  [ main:6484 ] - [ INFO ]  OBJETO HISTORIAL: 0
-2021-07-22 14:41:33  [ main:6485 ] - [ INFO ]  OBJETO HISTORIAL: 0
-2021-07-22 14:41:33  [ main:6485 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
-2021-07-22 23:24:32  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
-2021-07-22 23:24:35  [ main:2981 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
-2021-07-22 23:29:36  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
-2021-07-22 23:29:39  [ main:2929 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
-2021-07-22 23:29:45  [ main:8329 ] - [ ERROR ]  java.sql.SQLException: ORA-06550: line 1, column 7:
-PLS-00306: wrong number or types of arguments in call to 'WS_CREA_DOC1_PRO'
-ORA-06550: line 1, column 7:
-PL/SQL: Statement ignored
 
-2021-07-22 23:29:45  [ main:8399 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23831350 Resultado => 
-2021-07-22 23:29:45  [ main:8399 ] - [ INFO ]  OBJETO FACTURAS: 0
-2021-07-22 23:29:45  [ main:8400 ] - [ INFO ]  Resultado de consumo: 
-2021-07-22 23:29:47  [ main:10864 ] - [ ERROR ]  java.sql.SQLException: ORA-06550: line 1, column 7:
-PLS-00306: wrong number or types of arguments in call to 'WS_CREA_DOC1_PRO'
-ORA-06550: line 1, column 7:
-PL/SQL: Statement ignored
+2021-07-23 09:48:54  [ main:4109 ] - [ DEBUG ]  operation.getNumParams()=1
+2021-07-23 09:48:54  [ main:4109 ] - [ DEBUG ]  getParamList number of params: 1
+2021-07-23 09:48:54  [ main:4112 ] - [ DEBUG ]  Enter: Call::invoke(RPCElement)
+2021-07-23 09:48:54  [ main:4118 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+2021-07-23 09:48:54  [ main:4119 ] - [ DEBUG ]  Attachment support is enabled?  false
+2021-07-23 09:48:54  [ main:4124 ] - [ DEBUG ]  Enter: SOAPPart ctor(FORM_SOAPENVELOPE)
+2021-07-23 09:48:54  [ main:4124 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-07-23 09:48:54  [ main:4124 ] - [ DEBUG ]  Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope)
+2021-07-23 09:48:54  [ main:4124 ] - [ DEBUG ]  Exit: SOAPPart ctor()
+2021-07-23 09:48:54  [ main:4125 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(addBody00)
+2021-07-23 09:48:54  [ main:4125 ] - [ DEBUG ]  Adding body element to message...
+2021-07-23 09:48:54  [ main:4125 ] - [ DEBUG ]  Enter: Call::invoke()
+2021-07-23 09:48:54  [ main:4125 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-07-23 09:48:54  [ main:4125 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-07-23 09:48:54  [ main:4125 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-07-23 09:48:54  [ main:4125 ] - [ DEBUG ]  MessageContext: setTargetService()
+2021-07-23 09:48:54  [ main:4125 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(noService10)
+2021-07-23 09:48:54  [ main:4126 ] - [ DEBUG ]  Exception: 
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:45)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:18)
 
-2021-07-22 23:29:47  [ main:10933 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23831351 Resultado => 
-2021-07-22 23:29:47  [ main:10933 ] - [ INFO ]  OBJETO FACTURAS: 0
-2021-07-22 23:29:47  [ main:10934 ] - [ INFO ]  Resultado de consumo: 
-2021-07-22 23:29:50  [ main:13452 ] - [ ERROR ]  java.sql.SQLException: ORA-06550: line 1, column 7:
-PLS-00306: wrong number or types of arguments in call to 'WS_CREA_DOC1_PRO'
-ORA-06550: line 1, column 7:
-PL/SQL: Statement ignored
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:45)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:18)
+2021-07-23 09:48:54  [ main:4128 ] - [ DEBUG ]  MessageContext: setServiceHandler(null)
+2021-07-23 09:48:54  [ main:4128 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(targetService)
+2021-07-23 09:48:54  [ main:4128 ] - [ DEBUG ]  Target service:  
+2021-07-23 09:48:54  [ main:4128 ] - [ DEBUG ]  MessageContext: setTargetService()
+2021-07-23 09:48:54  [ main:4128 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(noService10)
+2021-07-23 09:48:54  [ main:4128 ] - [ DEBUG ]  Exception: 
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:45)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:18)
 
-2021-07-22 23:29:50  [ main:13522 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23831372 Resultado => 
-2021-07-22 23:29:50  [ main:13522 ] - [ INFO ]  OBJETO FACTURAS: 0
-2021-07-22 23:29:50  [ main:13522 ] - [ INFO ]  Resultado de consumo: 
-2021-07-22 23:29:50  [ main:13522 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:45)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:18)
+2021-07-23 09:48:54  [ main:4129 ] - [ DEBUG ]  MessageContext: setServiceHandler(null)
+2021-07-23 09:48:54  [ main:4131 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-07-23 09:48:54  [ main:4131 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-07-23 09:48:54  [ main:4132 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-07-23 09:48:54  [ main:4132 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4132 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-07-23 09:48:54  [ main:4132 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4132 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-07-23 09:48:54  [ main:4133 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4133 ] - [ DEBUG ]  register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+2021-07-23 09:48:54  [ main:4133 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4133 ] - [ DEBUG ]  register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+2021-07-23 09:48:54  [ main:4133 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4133 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-07-23 09:48:54  [ main:4136 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4136 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-07-23 09:48:54  [ main:4137 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4137 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-07-23 09:48:54  [ main:4138 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4138 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillRequest
+2021-07-23 09:48:54  [ main:4143 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4143 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:bill_ref_no
+2021-07-23 09:48:54  [ main:4145 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.encoding.XMLEncoder'
+2021-07-23 09:48:54  [ main:4145 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.encoding.XMLEncoder'
+2021-07-23 09:48:54  [ main:4145 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-07-23 09:48:54  [ main:4146 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.encoding.XMLEncoder
+2021-07-23 09:48:54  [ main:4146 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4146 ] - [ DEBUG ]  End element bill_ref_no
+2021-07-23 09:48:54  [ main:4146 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4146 ] - [ DEBUG ]  End element WsCreateBillRequest
+2021-07-23 09:48:54  [ main:4146 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4146 ] - [ DEBUG ]  End element soapenv:Body
+2021-07-23 09:48:54  [ main:4147 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4147 ] - [ DEBUG ]  End element soapenv:Envelope
+2021-07-23 09:48:54  [ main:4147 ] - [ DEBUG ]  <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><WsCreateBillRequest xmlns="http://www.qit.com/wsdoc1/intf/client"><bill_ref_no>0</bill_ref_no></WsCreateBillRequest></soapenv:Body></soapenv:Envelope>
+2021-07-23 09:48:54  [ main:4147 ] - [ DEBUG ]  Enter: AxisClient::invoke
+2021-07-23 09:48:54  [ main:4147 ] - [ DEBUG ]  EngineHandler: null
+2021-07-23 09:48:54  [ main:4149 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(axisUserAgent)
+2021-07-23 09:48:54  [ main:4152 ] - [ DEBUG ]  Enter: SimpleChain::invoke
+2021-07-23 09:48:54  [ main:4153 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(enter00)
+2021-07-23 09:48:54  [ main:4153 ] - [ DEBUG ]  Enter:  HTTPSender::invoke
+2021-07-23 09:48:54  [ main:4154 ] - [ DEBUG ]  Enter: SOAPPart::saveChanges
+2021-07-23 09:48:54  [ main:4156 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4157 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-07-23 09:48:54  [ main:4157 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4157 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-07-23 09:48:54  [ main:4157 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4157 ] - [ DEBUG ]  register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+2021-07-23 09:48:54  [ main:4157 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4157 ] - [ DEBUG ]  register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+2021-07-23 09:48:54  [ main:4157 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4158 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-07-23 09:48:54  [ main:4158 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4158 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-07-23 09:48:54  [ main:4158 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4158 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-07-23 09:48:54  [ main:4158 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4158 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillRequest
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:bill_ref_no
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  End element bill_ref_no
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  End element WsCreateBillRequest
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  End element soapenv:Body
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4159 ] - [ DEBUG ]  End element soapenv:Envelope
+2021-07-23 09:48:54  [ main:4160 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-07-23 09:48:54  [ main:4160 ] - [ DEBUG ]  Setting current message form to: FORM_OPTIMIZED (currentMessage is now org.apache.axis.utils.ByteArray)
+2021-07-23 09:48:54  [ main:4160 ] - [ DEBUG ]  Exit: SOAPPart::saveChanges(): org.apache.axis.utils.ByteArray@4df5bcb4
+2021-07-23 09:48:54  [ main:4164 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory'
+2021-07-23 09:48:54  [ main:4164 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory', lookup property 'axis.socketFactory'
+2021-07-23 09:48:54  [ main:4164 ] - [ DEBUG ]  find: resourceName = 'org.apache.axis.components.net.SocketFactory'
+2021-07-23 09:48:54  [ main:4164 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.net.SocketFactory'
+2021-07-23 09:48:54  [ main:4165 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.net.SocketFactory'
+2021-07-23 09:48:54  [ main:4165 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-07-23 09:48:54  [ main:4165 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.net.SocketFactory
+2021-07-23 09:48:54  [ main:4165 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory', mapping to constants
+2021-07-23 09:48:54  [ main:4165 ] - [ DEBUG ]  find: className='org.apache.axis.components.net.DefaultSocketFactory'
+2021-07-23 09:48:54  [ main:4166 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/developer/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/components/net/DefaultSocketFactory.class'
+2021-07-23 09:48:54  [ main:4166 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.components.net.DefaultSocketFactory' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-07-23 09:48:54  [ main:4168 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.net.TransportClientProperties'
+2021-07-23 09:48:54  [ main:4168 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.net.TransportClientProperties'
+2021-07-23 09:48:54  [ main:4168 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-07-23 09:48:54  [ main:4168 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.net.TransportClientProperties
+2021-07-23 09:48:54  [ main:4295 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(createdHTTP00)
+2021-07-23 09:48:54  [ main:4295 ] - [ DEBUG ]  Created an insecure HTTP connection
+2021-07-23 09:48:54  [ main:4295 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(xmlSent00)
+2021-07-23 09:48:54  [ main:4296 ] - [ DEBUG ]  XML sent:
+2021-07-23 09:48:54  [ main:4296 ] - [ DEBUG ]  ---------------------------------------------------
+2021-07-23 09:48:54  [ main:4296 ] - [ DEBUG ]  POST /wsdoc1/ HTTP/1.0
+Content-Type: text/xml; charset=utf-8
+Accept: application/soap+xml, application/dime, multipart/related, text/*
+User-Agent: Axis/1.4
+Host: 10.231.128.139:7003
+Cache-Control: no-cache
+Pragma: no-cache
+SOAPAction: ""
+Content-Length: 378
+
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><WsCreateBillRequest xmlns="http://www.qit.com/wsdoc1/intf/client"><bill_ref_no>0</bill_ref_no></WsCreateBillRequest></soapenv:Body></soapenv:Envelope>
+2021-07-23 09:48:54  [ main:4436 ] - [ DEBUG ]  HTTP/1.1 200 OK
+2021-07-23 09:48:54  [ main:4436 ] - [ DEBUG ]  Connection close
+2021-07-23 09:48:54  [ main:4436 ] - [ DEBUG ]  Date Fri, 23 Jul 2021 15:48:52 GMT
+2021-07-23 09:48:54  [ main:4436 ] - [ DEBUG ]  Content-Length 260
+2021-07-23 09:48:54  [ main:4436 ] - [ DEBUG ]  Content-Type text/xml; charset=UTF-8
+2021-07-23 09:48:54  [ main:4437 ] - [ DEBUG ]  SOAPAction ""
+2021-07-23 09:48:54  [ main:4437 ] - [ DEBUG ]  Accept text/xml
+2021-07-23 09:48:54  [ main:4438 ] - [ DEBUG ]  Enter: SOAPPart ctor(FORM_INPUTSTREAM)
+2021-07-23 09:48:54  [ main:4438 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-07-23 09:48:54  [ main:4439 ] - [ DEBUG ]  Setting current message form to: FORM_INPUTSTREAM (currentMessage is now org.apache.axis.transport.http.SocketInputStream)
+2021-07-23 09:48:54  [ main:4439 ] - [ DEBUG ]  Exit: SOAPPart ctor()
+2021-07-23 09:48:54  [ main:4439 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(xmlRecd00)
+2021-07-23 09:48:54  [ main:4439 ] - [ DEBUG ]  
+XML received:
+2021-07-23 09:48:54  [ main:4439 ] - [ DEBUG ]  -----------------------------------------------
+2021-07-23 09:48:54  [ main:4440 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-07-23 09:48:54  [ main:4440 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-07-23 09:48:54  [ main:4440 ] - [ DEBUG ]  current form is FORM_INPUTSTREAM
+2021-07-23 09:48:54  [ main:4448 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-07-23 09:48:54  [ main:4448 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.EnvelopeHandler@3e30646a
+2021-07-23 09:48:54  [ main:4451 ] - [ DEBUG ]  Enter: DeserializationContext::startPrefixMapping(env, http://schemas.xmlsoap.org/soap/envelope/)
+2021-07-23 09:48:54  [ main:4451 ] - [ DEBUG ]  Exit: DeserializationContext::startPrefixMapping()
+2021-07-23 09:48:54  [ main:4451 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope)
+2021-07-23 09:48:54  [ main:4451 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-07-23 09:48:54  [ main:4451 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.EnvelopeBuilder@6b8d96d9
+2021-07-23 09:48:54  [ main:4452 ] - [ DEBUG ]  Pushing element Envelope
+2021-07-23 09:48:54  [ main:4452 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-07-23 09:48:54  [ main:4452 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Header)
+2021-07-23 09:48:54  [ main:4452 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-07-23 09:48:54  [ main:4452 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.HeaderBuilder@758705fa
+2021-07-23 09:48:54  [ main:4452 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(newElem00)
+2021-07-23 09:48:54  [ main:4453 ] - [ DEBUG ]  New MessageElement (org.apache.axis.message.SOAPHeader@ebaa6cb) named {env}Header
+2021-07-23 09:48:54  [ main:4453 ] - [ DEBUG ]  Pushing element Header
+2021-07-23 09:48:54  [ main:4453 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-07-23 09:48:54  [ main:4453 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Header)
+2021-07-23 09:48:54  [ main:4453 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-07-23 09:48:54  [ main:4453 ] - [ DEBUG ]  Popping handler org.apache.axis.message.HeaderBuilder@758705fa
+2021-07-23 09:48:54  [ main:4453 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.SOAPEnvelope:Envelope
+2021-07-23 09:48:54  [ main:4453 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-07-23 09:48:54  [ main:4454 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Body)
+2021-07-23 09:48:54  [ main:4456 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-07-23 09:48:54  [ main:4456 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.BodyBuilder@5fe1ce85
+2021-07-23 09:48:54  [ main:4456 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(newElem00)
+2021-07-23 09:48:54  [ main:4456 ] - [ DEBUG ]  New MessageElement (org.apache.axis.message.SOAPBody@604c5de8) named {env}Body
+2021-07-23 09:48:54  [ main:4456 ] - [ DEBUG ]  Pushing element Body
+2021-07-23 09:48:54  [ main:4456 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-07-23 09:48:54  [ main:4457 ] - [ DEBUG ]  Enter: DeserializationContext::startPrefixMapping(, http://www.qit.com/wsdoc1/intf/client)
+2021-07-23 09:48:54  [ main:4457 ] - [ DEBUG ]  Exit: DeserializationContext::startPrefixMapping()
+2021-07-23 09:48:54  [ main:4457 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, WsCreateBillResponse)
+2021-07-23 09:48:54  [ main:4457 ] - [ DEBUG ]  Enter: BodyBuilder::onStartChild()
+2021-07-23 09:48:54  [ main:4457 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(newElem00)
+2021-07-23 09:48:54  [ main:4457 ] - [ DEBUG ]  New MessageElement (org.apache.axis.message.RPCElement@37091312) named {}WsCreateBillResponse
+2021-07-23 09:48:54  [ main:4457 ] - [ DEBUG ]  Exit: BodyBuilder::onStartChild()
+2021-07-23 09:48:54  [ main:4457 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-07-23 09:48:54  [ main:4458 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.SOAPHandler@66fdec9
+2021-07-23 09:48:54  [ main:4458 ] - [ DEBUG ]  Pushing element WsCreateBillResponse
+2021-07-23 09:48:54  [ main:4458 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-07-23 09:48:54  [ main:4458 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, mensaje)
+2021-07-23 09:48:54  [ main:4458 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-07-23 09:48:54  [ main:4458 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.SOAPHandler@57abad67
+2021-07-23 09:48:54  [ main:4458 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(newElem00)
+2021-07-23 09:48:54  [ main:4458 ] - [ DEBUG ]  New MessageElement (org.apache.axis.message.MessageElement@550a1967) named {}mensaje
+2021-07-23 09:48:54  [ main:4458 ] - [ DEBUG ]  Pushing element mensaje
+2021-07-23 09:48:54  [ main:4459 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-07-23 09:48:54  [ main:4459 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, mensaje)
+2021-07-23 09:48:54  [ main:4459 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-07-23 09:48:54  [ main:4459 ] - [ DEBUG ]  Popping handler org.apache.axis.message.SOAPHandler@57abad67
+2021-07-23 09:48:54  [ main:4460 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.RPCElement:WsCreateBillResponse
+2021-07-23 09:48:54  [ main:4461 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-07-23 09:48:54  [ main:4461 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, WsCreateBillResponse)
+2021-07-23 09:48:54  [ main:4461 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-07-23 09:48:54  [ main:4461 ] - [ DEBUG ]  Popping handler org.apache.axis.message.SOAPHandler@66fdec9
+2021-07-23 09:48:54  [ main:4461 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.SOAPBody:Body
+2021-07-23 09:48:54  [ main:4461 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-07-23 09:48:54  [ main:4461 ] - [ DEBUG ]  Enter: DeserializationContext::endPrefixMapping()
+2021-07-23 09:48:54  [ main:4462 ] - [ DEBUG ]  Exit: DeserializationContext::endPrefixMapping()
+2021-07-23 09:48:54  [ main:4462 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Body)
+2021-07-23 09:48:54  [ main:4462 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-07-23 09:48:54  [ main:4462 ] - [ DEBUG ]  Popping handler org.apache.axis.message.BodyBuilder@5fe1ce85
+2021-07-23 09:48:54  [ main:4462 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.SOAPEnvelope:Envelope
+2021-07-23 09:48:54  [ main:4462 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-07-23 09:48:54  [ main:4462 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope)
+2021-07-23 09:48:54  [ main:4462 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-07-23 09:48:54  [ main:4462 ] - [ DEBUG ]  Popping handler org.apache.axis.message.EnvelopeBuilder@6b8d96d9
+2021-07-23 09:48:54  [ main:4463 ] - [ DEBUG ]  Popped element stack to null
+2021-07-23 09:48:54  [ main:4463 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-07-23 09:48:54  [ main:4463 ] - [ DEBUG ]  Enter: DeserializationContext::endPrefixMapping(env)
+2021-07-23 09:48:54  [ main:4463 ] - [ DEBUG ]  Exit: DeserializationContext::endPrefixMapping()
+2021-07-23 09:48:54  [ main:4463 ] - [ DEBUG ]  Enter: DeserializationContext::endDocument()
+2021-07-23 09:48:54  [ main:4463 ] - [ DEBUG ]  Exit: DeserializationContext::endDocument()
+2021-07-23 09:48:54  [ main:4464 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-07-23 09:48:54  [ main:4464 ] - [ DEBUG ]  Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope)
+2021-07-23 09:48:54  [ main:4464 ] - [ DEBUG ]  Exit: SOAPPart::getAsSOAPEnvelope
+2021-07-23 09:48:54  [ main:4464 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4464 ] - [ DEBUG ]  register 'env' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-07-23 09:48:54  [ main:4464 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4464 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-07-23 09:48:54  [ main:4464 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4464 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-07-23 09:48:54  [ main:4465 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-07-23 09:48:54  [ main:4465 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-07-23 09:48:54  [ main:4465 ] - [ DEBUG ]  SAXOutputter.startElement ['http://www.qit.com/wsdoc1/intf/client' WsCreateBillResponse]
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillResponse
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  SAXOutputter.startElement ['http://www.qit.com/wsdoc1/intf/client' mensaje]
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:mensaje
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  SAXOutputter.characters ['El numero de factura es requerido']
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  SAXOutputter.endElement ['http://www.qit.com/wsdoc1/intf/client' mensaje]
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  End element mensaje
+2021-07-23 09:48:54  [ main:4466 ] - [ DEBUG ]  SAXOutputter.endElement ['http://www.qit.com/wsdoc1/intf/client' WsCreateBillResponse]
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  End element WsCreateBillResponse
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  End element env:Body
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  End element env:Envelope
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><WsCreateBillResponse xmlns="http://www.qit.com/wsdoc1/intf/client"><mensaje>El numero de factura es requerido</mensaje></WsCreateBillResponse></env:Body></env:Envelope>
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(exit00)
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  Exit:  HTTPDispatchHandler::invoke
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  Exit: SimpleChain::invoke
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(semanticCheck00)
+2021-07-23 09:48:54  [ main:4467 ] - [ DEBUG ]  Doing SOAP semantic checks...
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  Exit: AxisClient::invoke
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  Exit: Call::invoke()
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-07-23 09:48:54  [ main:4468 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-07-23 09:48:54  [ main:4469 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-07-23 09:48:54  [ main:4469 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-07-23 09:48:54  [ main:4470 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.RPCHandler@55dfebeb
+2021-07-23 09:48:54  [ main:4470 ] - [ DEBUG ]  Enter: DeserializationContext::startPrefixMapping(, http://www.qit.com/wsdoc1/intf/client)
+2021-07-23 09:48:54  [ main:4470 ] - [ DEBUG ]  Exit: DeserializationContext::startPrefixMapping()
+2021-07-23 09:48:54  [ main:4470 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, WsCreateBillResponse)
+2021-07-23 09:48:54  [ main:4470 ] - [ DEBUG ]  Enter: RPCHandler.onStartChild()
+2021-07-23 09:48:54  [ main:4470 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(typeFromAttr00)
+2021-07-23 09:48:54  [ main:4470 ] - [ DEBUG ]  Type from attributes is:  null
+2021-07-23 09:48:54  [ main:4471 ] - [ DEBUG ]  Exit: RPCHandler.onStartChild()
+2021-07-23 09:48:54  [ main:4472 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-07-23 09:48:54  [ main:4472 ] - [ DEBUG ]  Pushing handler org.apache.axis.encoding.ser.BeanDeserializer@1b73be9f
+2021-07-23 09:48:54  [ main:4472 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-07-23 09:48:54  [ main:4472 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, mensaje)
+2021-07-23 09:48:54  [ main:4476 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  Pushing handler org.apache.axis.encoding.ser.SimpleDeserializer@59252cb6
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, mensaje)
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  Popping handler org.apache.axis.encoding.ser.SimpleDeserializer@59252cb6
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00)
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  Set value El numero de factura es requerido in target org.apache.axis.encoding.ser.BeanPropertyTarget@542e560f
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00)
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  Set value El numero de factura es requerido in target org.apache.axis.encoding.CallbackTarget@626c44e7
+2021-07-23 09:48:54  [ main:4477 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.RPCElement:WsCreateBillResponse
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, WsCreateBillResponse)
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  Popping handler org.apache.axis.encoding.ser.BeanDeserializer@1b73be9f
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00)
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  Set value com.qit.www.wsdoc1.intf.client.WsCreateBillResponse@7c0a191b in target org.apache.axis.message.RPCParamTarget@4dc8caa7
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.SOAPBody:Body
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  Exit: Call::invoke(RPCElement)
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  Exit: Call::invoke(ns, meth, args)
+2021-07-23 09:48:54  [ main:4478 ] - [ DEBUG ]  axis.Call.invoke: 375 WsCreateBill
+2021-07-23 09:48:54  [ main:4478 ] - [ INFO ]  Respuesta de WS facturas: null
+2021-07-23 09:48:54  [ main:4478 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-07-23 09:59:01  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 09:59:05  [ main:3939 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-07-23 09:59:05  [ main:4213 ] - [ WARN ]  Lista de la vista vacia
+2021-07-23 09:59:05  [ main:4213 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-07-23 10:04:42  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 10:04:46  [ main:3565 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-07-23 10:04:46  [ main:3856 ] - [ WARN ]  Lista de la vista vacia
+2021-07-23 10:04:46  [ main:3856 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-07-23 11:10:12  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-07-23 11:10:15  [ main:3486 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-07-23 11:10:16  [ main:3784 ] - [ WARN ]  Lista de la vista vacia
+2021-07-23 11:10:16  [ main:3784 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************

@@ -104,7 +104,7 @@ public class ProcesoFacturasDao {
 
 	}
 
-	public static String ejecutaApldesRecargaSP(int cbhistorialaccionid) {
+	public static String ejecutaFacturasSP(int cbhistorialaccionid, String batchSize, String outBatchSize, String status, String respuesta ) {
 		boolean result = false;
 		String result1 = "";
 		Connection conn = null;
@@ -114,6 +114,10 @@ public class ProcesoFacturasDao {
 
 			cmd = conn.prepareCall(Tools.FACCURAS_VANTIVE_SP);
 			cmd.setInt(1, cbhistorialaccionid);
+			cmd.setString(2, batchSize);
+			cmd.setString(3, outBatchSize);
+			cmd.setString(4, status);
+			cmd.setString(5, respuesta);
 
 			result = cmd.executeUpdate() > 0;
 			// result1 = result;

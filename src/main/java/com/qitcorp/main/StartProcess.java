@@ -14,7 +14,8 @@ public class StartProcess {
 		// TODO Auto-generated method stub
 		logger.info("********************* INICIA PROCESO ***********************");
 		ProcesoFacturasController objProceso = new ProcesoFacturasController();
-		objProceso.startProcessFactura();;
+		objProceso.startProcessFactura();
+		//objProceso.requestWsFacturasVantive(null, null);
 		logger.info("********************* FINALIZA PROCESO ***********************");
 	}
 

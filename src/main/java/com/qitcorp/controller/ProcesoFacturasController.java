@@ -6,8 +6,6 @@ import java.net.URL;
 import java.rmi.RemoteException;
 import java.util.Iterator;
 import java.util.List;
-import java.util.logging.Level;
-
 import org.apache.axis.AxisFault;
 import org.apache.log4j.Logger;
 
@@ -20,7 +18,7 @@ import com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub;
 import com.qitcorp.dao.ProcesoFacturasDao;
 
 import com.qitcorp.model.TcFacturasVantiveModel;
-import com.qitcorp.util.Tools;
+
 
 
 
@@ -44,8 +42,8 @@ public class ProcesoFacturasController {
 			
 			WsCreateBillResponse response = wsExec.wsCreateBill(request);
 					                              
-			
-					logger.info("Respuesta de WS facturas: "+response.getMensaje());
+			System.out.println("Llega hasta despues del llamado del ws");
+					logger.info("Respuesta de WS facturas: "+response.getRuta_pdf());
 			return response;
 		} catch (AxisFault e) {
 			logger.error(e);
@@ -66,24 +64,26 @@ public class ProcesoFacturasController {
 			Iterator<TcFacturasVantiveModel> iterator = list.iterator();
 			while (iterator.hasNext()) {
 				TcFacturasVantiveModel facturas = iterator.next();
-				String response = procesaWSPagosCreaCasos(parametros, facturas);
+				String response = procesaWSFacturasVantine(parametros, facturas);
 				logger.info("OBJETO FACTURAS: " + facturas.getBILL_REF_NO());
 				logger.info("Resultado de consumo: "+response);
 
 				//obtenerFacturasVantive(parametros);
+				
 			}
 		} else {
-			logger.warn("Lista de acciones vacia");
+			logger.warn("Lista de la vista vacia");
 		}
 
 	}
 	 
-		public String procesaWSPagosCreaCasos(List<TcFacturasVantiveModel> parametros,
+		public String procesaWSFacturasVantine(List<TcFacturasVantiveModel> parametros,
 				TcFacturasVantiveModel historial) {
 			
-			String result = ProcesoFacturasDao.ejecutaApldesRecargaSP(historial.getTCFACTURASCABID());
+			String result = ProcesoFacturasDao.ejecutaFacturasSP(historial.getTCFACTURASCABID(), historial.getBatchSize(), historial.getOutBatchSize(), historial.getStatus(), historial.getRespuesta());
 			logger.info("[ProcesoFacturas] Ejecuta SP para id => "
 			+ historial.getTCFACTURASCABID() + " Resultado => " + result);	
+			
 			
 			
 			return result;
