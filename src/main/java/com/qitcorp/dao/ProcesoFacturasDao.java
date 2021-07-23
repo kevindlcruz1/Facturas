@@ -104,9 +104,9 @@ public class ProcesoFacturasDao {
 
 	}
 
-	public static String ejecutaFacturasSP(int cbhistorialaccionid, String batchSize, String outBatchSize, String status, String respuesta ) {
+	public static boolean ejecutaFacturasSP(int cbhistorialaccionid, String batchSize, String outBatchSize, String status, String respuesta ) {
 		boolean result = false;
-		String result1 = "";
+	
 		Connection conn = null;
 		CallableStatement cmd = null;
 		try {
@@ -134,6 +134,6 @@ public class ProcesoFacturasDao {
 				logger.error(e);
 			}
 		}
-		return result1;
+		return result;
 	}
 }

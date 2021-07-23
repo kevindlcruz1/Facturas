@@ -35,14 +35,14 @@ public class ProcesoFacturasController {
 		try {
 			wsExec = new WsDoc1Soap11Stub(new URL(servicio.getWsDoc1Soap11Address()), servicio);
 			
-			//Se valida si los 3 campos telefono traen valor o vienen null
+			
 			//int BILL_REF_NO = facturas.getTCFACTURASCABID();
 			WsCreateBillRequest request = new WsCreateBillRequest();
 			request.setBill_ref_no(0);
 			
 			WsCreateBillResponse response = wsExec.wsCreateBill(request);
 					                              
-			System.out.println("Llega hasta despues del llamado del ws");
+			
 					logger.info("Respuesta de WS facturas: "+response.getRuta_pdf());
 			return response;
 		} catch (AxisFault e) {
@@ -64,11 +64,11 @@ public class ProcesoFacturasController {
 			Iterator<TcFacturasVantiveModel> iterator = list.iterator();
 			while (iterator.hasNext()) {
 				TcFacturasVantiveModel facturas = iterator.next();
-				String response = procesaWSFacturasVantine(parametros, facturas);
+				boolean response = procesaWSFacturasVantine(parametros, facturas);
 				logger.info("OBJETO FACTURAS: " + facturas.getBILL_REF_NO());
 				logger.info("Resultado de consumo: "+response);
 
-				//obtenerFacturasVantive(parametros);
+				
 				
 			}
 		} else {
@@ -77,12 +77,12 @@ public class ProcesoFacturasController {
 
 	}
 	 
-		public String procesaWSFacturasVantine(List<TcFacturasVantiveModel> parametros,
-				TcFacturasVantiveModel historial) {
+		public boolean procesaWSFacturasVantine(List<TcFacturasVantiveModel> parametros,
+				TcFacturasVantiveModel facturas) {
 			
-			String result = ProcesoFacturasDao.ejecutaFacturasSP(historial.getTCFACTURASCABID(), historial.getBatchSize(), historial.getOutBatchSize(), historial.getStatus(), historial.getRespuesta());
+			boolean result = ProcesoFacturasDao.ejecutaFacturasSP(facturas.getTCFACTURASCABID(), facturas.getBatchSize(), facturas.getOutBatchSize(), facturas.getStatus(), facturas.getRespuesta());
 			logger.info("[ProcesoFacturas] Ejecuta SP para id => "
-			+ historial.getTCFACTURASCABID() + " Resultado => " + result);	
+			+ facturas.getTCFACTURASCABID() + " Resultado => " + result);	
 			
 			
 			
