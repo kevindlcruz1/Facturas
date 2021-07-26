@@ -28,7 +28,7 @@ public class ProcesoFacturasController {
 
 	
 	
-	public WsCreateBillResponse requestWsFacturasVantive(List<TcFacturasVantiveModel> parametro,TcFacturasVantiveModel facturas ) {
+	public WsCreateBillResponse requestWsFacturasVantive(List<TcFacturasVantiveModel> parametros,TcFacturasVantiveModel facturas ) {
 		WsDoc1Service servicio = new WsDoc1ServiceLocator();
 		WsDoc1 wsExec;
 
@@ -64,7 +64,9 @@ public class ProcesoFacturasController {
 			Iterator<TcFacturasVantiveModel> iterator = list.iterator();
 			while (iterator.hasNext()) {
 				TcFacturasVantiveModel facturas = iterator.next();
-				boolean response = procesaWSFacturasVantine(parametros, facturas);
+				//boolean response = procesaWSFacturasVantine(parametros, facturas);
+				procesaWSFacturasVantine(parametros, facturas);
+				WsCreateBillResponse response = requestWsFacturasVantive(parametros, facturas);
 				logger.info("OBJETO FACTURAS: " + facturas.getBILL_REF_NO());
 				logger.info("Resultado de consumo: "+response);
 
