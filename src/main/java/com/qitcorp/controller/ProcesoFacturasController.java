@@ -28,33 +28,7 @@ public class ProcesoFacturasController {
 
 	
 	
-	public WsCreateBillResponse requestWsFacturasVantive(List<TcFacturasVantiveModel> parametros,TcFacturasVantiveModel facturas ) {
-		WsDoc1Service servicio = new WsDoc1ServiceLocator();
-		WsDoc1 wsExec;
-
-		try {
-			wsExec = new WsDoc1Soap11Stub(new URL(servicio.getWsDoc1Soap11Address()), servicio);
-			
-			
-			//int BILL_REF_NO = facturas.getTCFACTURASCABID();
-			WsCreateBillRequest request = new WsCreateBillRequest();
-			request.setBill_ref_no(0);
-			
-			WsCreateBillResponse response = wsExec.wsCreateBill(request);
-					                              
-			
-					logger.info("Respuesta de WS facturas: "+response.getRuta_pdf());
-			return response;
-		} catch (AxisFault e) {
-			logger.error(e);
-		} catch (MalformedURLException e) {
-			logger.error(e);
-		} catch (RemoteException e) {
-			logger.error(e);
-		}
-		
-		return null;
-	}
+	
 	public void startProcessFactura() {
 		ProcesoFacturasDao objDao = new ProcesoFacturasDao();
 		List<TcFacturasVantiveModel> list = objDao.obtenerFacturasVantive();
@@ -67,8 +41,8 @@ public class ProcesoFacturasController {
 				//boolean response = procesaWSFacturasVantine(parametros, facturas);
 				procesaWSFacturasVantine(parametros, facturas);
 				WsCreateBillResponse response = requestWsFacturasVantive(parametros, facturas);
-				logger.info("OBJETO FACTURAS: " + facturas.getBILL_REF_NO());
-				logger.info("Resultado de consumo: "+response);
+				logger.info("OBJETO FACTURAS: " + facturas.getBillRefNo());
+				logger.info("Resultado de consumo: "+response.getMensaje());
 
 				
 				
@@ -82,15 +56,45 @@ public class ProcesoFacturasController {
 		public boolean procesaWSFacturasVantine(List<TcFacturasVantiveModel> parametros,
 				TcFacturasVantiveModel facturas) {
 			
-			boolean result = ProcesoFacturasDao.ejecutaFacturasSP(facturas.getTCFACTURASCABID(), facturas.getBatchSize(), facturas.getOutBatchSize(), facturas.getStatus(), facturas.getRespuesta());
+			boolean result = ProcesoFacturasDao.ejecutaFacturasSP(facturas.getTcFacturasCabId(), facturas.getBatchSize(), facturas.getOutBatchSize(), facturas.getStatus(), facturas.getRespuesta());
 			logger.info("[ProcesoFacturas] Ejecuta SP para id => "
-			+ facturas.getTCFACTURASCABID() + " Resultado => " + result);	
+			+ facturas.getTcFacturasCabId() + " Resultado => " + result);	
 			
 			
 			
 			return result;
 		}
 		
+		
+		public WsCreateBillResponse requestWsFacturasVantive(List<TcFacturasVantiveModel> parametros,TcFacturasVantiveModel facturas ) {
+			WsDoc1Service servicio = new WsDoc1ServiceLocator();
+			WsDoc1 wsExec;
+
+			try {
+				wsExec = new WsDoc1Soap11Stub(new URL(servicio.getWsDoc1Soap11Address()), servicio);
+				
+				
+				//int BILL_REF_NO = facturas.getTCFACTURASCABID();
+				WsCreateBillRequest request = new WsCreateBillRequest();
+				request.setBill_ref_no(facturas.getBillRefNo());
+				
+				logger.info("Parametro request: "+facturas.getBillRefNo());
+				
+				WsCreateBillResponse response = wsExec.wsCreateBill(request);
+						                              
+				
+						logger.info("Respuesta de WS facturas: "+response.getRuta_pdf());
+				return response;
+			} catch (AxisFault e) {
+				logger.error(e);
+			} catch (MalformedURLException e) {
+				logger.error(e);
+			} catch (RemoteException e) {
+				logger.error(e);
+			}
+			
+			return null;
+		}
 		
 
 }

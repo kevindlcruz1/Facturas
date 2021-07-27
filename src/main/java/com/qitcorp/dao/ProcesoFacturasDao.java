@@ -31,11 +31,11 @@ public class ProcesoFacturasDao {
 		try {
 
 			conn = ConnectionDB.getConnection();
-			ps = conn.prepareStatement(Tools.obtener_tc_facturas_vantive_vw);
+			ps = conn.prepareStatement(Tools.obtenerFacturasVantive);
 			rst = ps.executeQuery();
 			while (rst.next()) {
-				model = new TcFacturasVantiveModel();
-				model.setBILL_REF_NO(rst.getInt(1));
+				model = new TcFacturasVantiveModel(0, 0);
+				model.setBillRefNo(rst.getInt(TcFacturasVantiveModel.FIELD_BILL_REF_NO));
 
 				listResult.add(model);
 			}
@@ -59,12 +59,13 @@ public class ProcesoFacturasDao {
 		try {
 			conn = ConnectionDB.getConnection();
 			stmt = conn.createStatement();
-			logger.info(Tools.obtener_tc_facturas_vantive_vw);
-			rst = stmt.executeQuery(Tools.obtener_tc_facturas_vantive_vw);
+			logger.info(Tools.obtenerFacturasVantive);
+			rst = stmt.executeQuery(Tools.obtenerFacturasVantive);
 
 			while (rst.next()) {
-				obj = new TcFacturasVantiveModel();
-				obj.setTCFACTURASCABID(rst.getInt(TcFacturasVantiveModel.FIELD_TCFACTURASCABID));
+				obj = new TcFacturasVantiveModel(0, 0);
+				obj.setTcFacturasCabId(rst.getInt(TcFacturasVantiveModel.FIELD_TCFACTURASCABID));
+				obj.setBillRefNo(rst.getInt(TcFacturasVantiveModel.FIELD_BILL_REF_NO));
 				lst.add(obj);
 			}
 		} catch (Exception e) {

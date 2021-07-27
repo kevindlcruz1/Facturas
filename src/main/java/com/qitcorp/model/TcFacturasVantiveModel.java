@@ -1,372 +1,788 @@
 package com.qitcorp.model;
 
 public class TcFacturasVantiveModel {
+	 public final static String VIEW = "TC_FACTURAS_VANTIVE_VW"; 
 	public final static String FIELD_TCFACTURASCABID = "TCFACTURASCABID";
-	private int TCFACTURASCABID;
-	private String SERIE_FAC;
-	private int NO_FAC;
-	private int ACCOUNT_NO;
-	private int TECUENTAID;
-	private int SWCUSTOMERID;
-	private String FECHA_EMISION;
-	private String USUARIO_EMISION;
-	private String ESTADO;
-	private String NIT;
-	private String NOMBRE;
-	private String DIRECCION;
-	private String TIPO_FAC;
-	private String TIPO_PAGO;
-	private String EMISOR_PAGO;
-	private String ID_PAGO;
-	private String REFERENCIA_PAGO;
-	private int MONTO_PAGADO;
-	private int MONTO_FACTURA;
-	private String SWDATECREATED;
-	private String SWCREATEDBY;
-	private int TIMESTAMP;
-	private int COD_ELEMENTOID;
-	private int TENUMSCONTRID;
-	private int BILL_REF_NO;
-	private int BILL_REF_RESETS;
-	private int ID_RELACIONADO;
-	private int TIPO_ID_RELACIONADO;
-	private int INTENTOS;
-	private String DEPARTAMENTO;
-	private String MUNICIPIO;
-	private String FEC_VENCIMIENTO;
-	private int TCGFACTURAID;
-	private int TCCORTECAJAID;
-	private int TESALMACENESINVID;
-	private int DISTRIBUIDOR;
-	private int PUNTO_VENTA;
-	private int VENDEDOR;
-	private String DES_ESTATUSTRIB;
-	private String CREDITO_FISCAL;
-	private String GIRO;
-	private String NUMERO_IVA;
-	private int DESCUENTO;
-	private String LIQUIDADO_COBROS;
-	private String FECHA_LIQ_COBROS;
-	private int MONTO_FINAL;
-	private int TCRETENCIONID;
-	private int VALOR_RETENCION;
-	private int ENVIO_RI;
-	private int FACTURA_PROCESADA;
-	private int CONTRIBUCION_SEG;
+	
+	/*public final static String FIELD_SERIE_FAC = "SERIE_FAC";
+	public final static String FIELD_NO_FAC ="NO_FAC";
+	public final static String FIELD_ACCOUNT_NO ="ACCOUNT_NO";
+	public final static String FIELD_TECUENTAID ="TECUENTAID";
+	public final static String FIELD_SWCUSTOMERID ="SWCUSTOMERID";
+	public final static String FIELD_FECHA_EMISION ="FECHA_EMISION";
+	public final static String FIELD_USUARIO_EMISION ="USUARIO_EMISION";
+	public final static String FIELD_ESTADO ="ESTADO";
+	public final static String FIELD_NIT ="NIT";
+	public final static String FIELD_NOMBRE ="NOMBRE";
+	public final static String FIELD_DIRECCION ="DIRECCION";
+	public final static String FIELD_TIPO_FAC ="TIPO_FAC";
+	public final static String FIELD_TIPO_PAGO ="TIPO_PAGO";
+	public final static String FIELD_EMISOR_PAGO ="EMISOR_PAGO";
+	public final static String FIELD_ID_PAGO ="ID_PAGO";
+	public final static String FIELD_REFERENCIA_PAGO ="REFERENCIA_PAGO";
+	public final static String FIELD_MONTO_PAGADO ="MONTO_PAGADO";
+	public final static String FIELD_MONTO_FACTURA ="MONTO_FACTURA";
+	public final static String FIELD_SWDATECREATED ="SWDATECREATED";
+	public final static String FIELD_SWCREATEDBY ="SWCREATEDBY";
+	public final static String FIELD_TIMESTAMP ="TIMESTAMP";
+	public final static String FIELD_COD_ELEMENTOID ="COD_ELEMENTOID";
+	public final static String FIELD_TENUMSCONTRID ="TENUMSCONTRID";*/
+	public final static String FIELD_BILL_REF_NO = "BILL_REF_NO";
+	/*public final static String FIELD_BILL_REF_RESETS ="BILL_REF_RESETS";
+	public final static String FIELD_ID_RELACIONADO ="ID_RELACIONADO";
+	public final static String FIELD_TIPO_ID_RELACIONADO ="TIPO_ID_RELACIONADO";
+	public final static String FIELD_INTENTOS ="INTENTOS";
+	public final static String FIELD_DEPARTAMENTO ="DEPARTAMENTO";
+	public final static String FIELD_MUNICIPIO ="MUNICIPIO";
+	public final static String FIELD_FEC_VENCIMIENTO ="FEC_VENCIMIENTO";
+	public final static String FIELD_TCGFACTURAID ="TCGFACTURAID";
+	public final static String FIELD_TCCORTECAJAID ="TCCORTECAJAID";
+	public final static String FIELD_TESALMACENESINVID ="TESALMACENESINVID";
+	public final static String FIELD_DISTRIBUIDOR ="DISTRIBUIDOR";
+	public final static String FIELD_PUNTO_VENTA ="PUNTO_VENTA";
+	public final static String FIELD_VENDEDOR ="VENDEDOR";
+	public final static String FIELD_DES_ESTATUSTRIB ="DES_ESTATUSTRIB";
+	public final static String FIELD_CREDITO_FISCAL ="CREDITO_FISCAL";
+	public final static String FIELD_GIRO ="GIRO";
+	public final static String FIELD_NUMERO_IVA ="NUMERO_IVA";
+	public final static String FIELD_DESCUENTO ="DESCUENTO";
+	public final static String FIELD_LIQUIDADO_COBROS ="LIQUIDADO_COBROS";
+	public final static String FIELD_FECHA_LIQ_COBROS ="FECHA_LIQ_COBROS";
+	public final static String FIELD_MONTO_FINAL ="MONTO_FINAL";
+	public final static String FIELD_TCRETENCIONID ="TCRETENCIONID";
+	public final static String FIELD_VALOR_RETENCION ="VALOR_RETENCION";
+	public final static String FIELD_ENVIO_RI ="ENVIO_RI";
+	public final static String FIELD_FACTURA_PROCESADA ="FACTURA_PROCESADA";
+	public final static String FIELD_CONTRIBUCION_SEG ="CONTRIBUCION_SEG";
+	public final static String FIELD_idDoc ="idDoc";*/
+	
+	
+	
+	private int tcFacturasCabId;
+	private String serieFac;
+	private int noFac;
+	private int accountNo;
+	private int tecuentaid;
+	private int swcustomerid;
+	private String fechaEmision;
+	private String usuarioEmision;
+	private String estado;
+	private String nit;
+	private String nombre;
+	private String direccion;
+	private String tipoFac;
+	private String tipoPago;
+	private String emisorPago;
+	private String idPago;
+	private String referenciaPago;
+	private int montoPagado;
+	private int montoFactura;
+	private String swdatecreated;
+	private String swcreatedby;
+	private int timestamp;
+	private int codElementoId;
+	private int teNumscontrId;
+	private int billRefNo;
+	private int billRefResets;
+	private int idRelacionado;
+	private int tipoIdRelacionado;
+	private int intentos;
+	private String departamento;
+	private String municipio;
+	private String fecVencimiento;
+	private int tcgfacturaid;
+	private int tcCorteCajaId ;
+	private int tesalmacenesinvid;
+	private int distribuidor;
+	private int puntoVenta;
+	private int vendedor;
+	private String desEstatustrib;
+	private String creditoFiscal;
+	private String giro;
+	private String numeroIva;
+	private int descuento;
+	private String liquidadoCobros;
+	private String fechaLiqCobros;
+	private int montoFinal;
+	private int tcRetencionId;
+	private int valorRetencion;
+	private int envioRi;
+	private int facturaProcesada;
+	private int contribucionSeg;
 	private double idDoc;
 	private String batchSize;
 	
 	private String outBatchSize; 
 	private String status;
 	private String respuesta; 
-
 	
-	public int getTCFACTURASCABID() {
-		return TCFACTURASCABID;
-	}
-	public void setTCFACTURASCABID(int tCFACTURASCABID) {
-		TCFACTURASCABID = tCFACTURASCABID;
-	}
-	public String getSERIE_FAC() {
-		return SERIE_FAC;
-	}
-	public void setSERIE_FAC(String sERIE_FAC) {
-		SERIE_FAC = sERIE_FAC;
-	}
-	public int getNO_FAC() {
-		return NO_FAC;
-	}
-	public void setNO_FAC(int nO_FAC) {
-		NO_FAC = nO_FAC;
-	}
-	public int getACCOUNT_NO() {
-		return ACCOUNT_NO;
-	}
-	public void setACCOUNT_NO(int aCCOUNT_NO) {
-		ACCOUNT_NO = aCCOUNT_NO;
-	}
-	public int getTECUENTAID() {
-		return TECUENTAID;
-	}
-	public void setTECUENTAID(int tECUENTAID) {
-		TECUENTAID = tECUENTAID;
-	}
-	public int getSWCUSTOMERID() {
-		return SWCUSTOMERID;
-	}
-	public void setSWCUSTOMERID(int sWCUSTOMERID) {
-		SWCUSTOMERID = sWCUSTOMERID;
-	}
-	public String getFECHA_EMISION() {
-		return FECHA_EMISION;
-	}
-	public void setFECHA_EMISION(String fECHA_EMISION) {
-		FECHA_EMISION = fECHA_EMISION;
-	}
-	public String getUSUARIO_EMISION() {
-		return USUARIO_EMISION;
-	}
-	public void setUSUARIO_EMISION(String uSUARIO_EMISION) {
-		USUARIO_EMISION = uSUARIO_EMISION;
-	}
-	public String getESTADO() {
-		return ESTADO;
-	}
-	public void setESTADO(String eSTADO) {
-		ESTADO = eSTADO;
-	}
-	public String getNIT() {
-		return NIT;
-	}
-	public void setNIT(String nIT) {
-		NIT = nIT;
-	}
-	public String getNOMBRE() {
-		return NOMBRE;
-	}
-	public void setNOMBRE(String nOMBRE) {
-		NOMBRE = nOMBRE;
-	}
-	public String getDIRECCION() {
-		return DIRECCION;
-	}
-	public void setDIRECCION(String dIRECCION) {
-		DIRECCION = dIRECCION;
-	}
-	public String getTIPO_FAC() {
-		return TIPO_FAC;
-	}
-	public void setTIPO_FAC(String tIPO_FAC) {
-		TIPO_FAC = tIPO_FAC;
-	}
-	public String getTIPO_PAGO() {
-		return TIPO_PAGO;
-	}
-	public void setTIPO_PAGO(String tIPO_PAGO) {
-		TIPO_PAGO = tIPO_PAGO;
-	}
-	public String getEMISOR_PAGO() {
-		return EMISOR_PAGO;
-	}
-	public void setEMISOR_PAGO(String eMISOR_PAGO) {
-		EMISOR_PAGO = eMISOR_PAGO;
-	}
-	public String getID_PAGO() {
-		return ID_PAGO;
-	}
-	public void setID_PAGO(String iD_PAGO) {
-		ID_PAGO = iD_PAGO;
-	}
-	public String getREFERENCIA_PAGO() {
-		return REFERENCIA_PAGO;
-	}
-	public void setREFERENCIA_PAGO(String rEFERENCIA_PAGO) {
-		REFERENCIA_PAGO = rEFERENCIA_PAGO;
-	}
-	public int getMONTO_PAGADO() {
-		return MONTO_PAGADO;
-	}
-	public void setMONTO_PAGADO(int mONTO_PAGADO) {
-		MONTO_PAGADO = mONTO_PAGADO;
-	}
-	public int getMONTO_FACTURA() {
-		return MONTO_FACTURA;
-	}
-	public void setMONTO_FACTURA(int mONTO_FACTURA) {
-		MONTO_FACTURA = mONTO_FACTURA;
-	}
-	public String getSWDATECREATED() {
-		return SWDATECREATED;
-	}
-	public void setSWDATECREATED(String sWDATECREATED) {
-		SWDATECREATED = sWDATECREATED;
-	}
-	public String getSWCREATEDBY() {
-		return SWCREATEDBY;
-	}
-	public void setSWCREATEDBY(String sWCREATEDBY) {
-		SWCREATEDBY = sWCREATEDBY;
-	}
-	public int getTIMESTAMP() {
-		return TIMESTAMP;
-	}
-	public void setTIMESTAMP(int tIMESTAMP) {
-		TIMESTAMP = tIMESTAMP;
-	}
-	public int getCOD_ELEMENTOID() {
-		return COD_ELEMENTOID;
-	}
-	public void setCOD_ELEMENTOID(int cOD_ELEMENTOID) {
-		COD_ELEMENTOID = cOD_ELEMENTOID;
-	}
-	public int getTENUMSCONTRID() {
-		return TENUMSCONTRID;
-	}
-	public void setTENUMSCONTRID(int tENUMSCONTRID) {
-		TENUMSCONTRID = tENUMSCONTRID;
-	}
-	public int getBILL_REF_NO() {
-		return BILL_REF_NO;
-	}
-	public void setBILL_REF_NO(int bILL_REF_NO) {
-		BILL_REF_NO = bILL_REF_NO;
-	}
-	public int getBILL_REF_RESETS() {
-		return BILL_REF_RESETS;
-	}
-	public void setBILL_REF_RESETS(int bILL_REF_RESETS) {
-		BILL_REF_RESETS = bILL_REF_RESETS;
-	}
-	public int getID_RELACIONADO() {
-		return ID_RELACIONADO;
-	}
-	public void setID_RELACIONADO(int iD_RELACIONADO) {
-		ID_RELACIONADO = iD_RELACIONADO;
-	}
-	public int getTIPO_ID_RELACIONADO() {
-		return TIPO_ID_RELACIONADO;
-	}
-	public void setTIPO_ID_RELACIONADO(int tIPO_ID_RELACIONADO) {
-		TIPO_ID_RELACIONADO = tIPO_ID_RELACIONADO;
-	}
-	public int getINTENTOS() {
-		return INTENTOS;
-	}
-	public void setINTENTOS(int iNTENTOS) {
-		INTENTOS = iNTENTOS;
-	}
-	public String getDEPARTAMENTO() {
-		return DEPARTAMENTO;
-	}
-	public void setDEPARTAMENTO(String dEPARTAMENTO) {
-		DEPARTAMENTO = dEPARTAMENTO;
-	}
-	public String getMUNICIPIO() {
-		return MUNICIPIO;
-	}
-	public void setMUNICIPIO(String mUNICIPIO) {
-		MUNICIPIO = mUNICIPIO;
-	}
-	public String getFEC_VENCIMIENTO() {
-		return FEC_VENCIMIENTO;
-	}
-	public void setFEC_VENCIMIENTO(String fEC_VENCIMIENTO) {
-		FEC_VENCIMIENTO = fEC_VENCIMIENTO;
-	}
-	public int getTCGFACTURAID() {
-		return TCGFACTURAID;
-	}
-	public void setTCGFACTURAID(int tCGFACTURAID) {
-		TCGFACTURAID = tCGFACTURAID;
-	}
-	public int getTCCORTECAJAID() {
-		return TCCORTECAJAID;
-	}
-	public void setTCCORTECAJAID(int tCCORTECAJAID) {
-		TCCORTECAJAID = tCCORTECAJAID;
-	}
-	public int getTESALMACENESINVID() {
-		return TESALMACENESINVID;
-	}
-	public void setTESALMACENESINVID(int tESALMACENESINVID) {
-		TESALMACENESINVID = tESALMACENESINVID;
-	}
-	public int getDISTRIBUIDOR() {
-		return DISTRIBUIDOR;
-	}
-	public void setDISTRIBUIDOR(int dISTRIBUIDOR) {
-		DISTRIBUIDOR = dISTRIBUIDOR;
-	}
-	public int getPUNTO_VENTA() {
-		return PUNTO_VENTA;
-	}
-	public void setPUNTO_VENTA(int pUNTO_VENTA) {
-		PUNTO_VENTA = pUNTO_VENTA;
-	}
-	public int getVENDEDOR() {
-		return VENDEDOR;
-	}
-	public void setVENDEDOR(int vENDEDOR) {
-		VENDEDOR = vENDEDOR;
-	}
-	public String getDES_ESTATUSTRIB() {
-		return DES_ESTATUSTRIB;
-	}
-	public void setDES_ESTATUSTRIB(String dES_ESTATUSTRIB) {
-		DES_ESTATUSTRIB = dES_ESTATUSTRIB;
-	}
-	public String getCREDITO_FISCAL() {
-		return CREDITO_FISCAL;
-	}
-	public void setCREDITO_FISCAL(String cREDITO_FISCAL) {
-		CREDITO_FISCAL = cREDITO_FISCAL;
-	}
-	public String getGIRO() {
-		return GIRO;
-	}
-	public void setGIRO(String gIRO) {
-		GIRO = gIRO;
-	}
-	public String getNUMERO_IVA() {
-		return NUMERO_IVA;
-	}
-	public void setNUMERO_IVA(String nUMERO_IVA) {
-		NUMERO_IVA = nUMERO_IVA;
-	}
-	public int getDESCUENTO() {
-		return DESCUENTO;
-	}
-	public void setDESCUENTO(int dESCUENTO) {
-		DESCUENTO = dESCUENTO;
-	}
-	public String getLIQUIDADO_COBROS() {
-		return LIQUIDADO_COBROS;
-	}
-	public void setLIQUIDADO_COBROS(String lIQUIDADO_COBROS) {
-		LIQUIDADO_COBROS = lIQUIDADO_COBROS;
-	}
-	public String getFECHA_LIQ_COBROS() {
-		return FECHA_LIQ_COBROS;
-	}
-	public void setFECHA_LIQ_COBROS(String fECHA_LIQ_COBROS) {
-		FECHA_LIQ_COBROS = fECHA_LIQ_COBROS;
-	}
-	public int getMONTO_FINAL() {
-		return MONTO_FINAL;
-	}
-	public void setMONTO_FINAL(int mONTO_FINAL) {
-		MONTO_FINAL = mONTO_FINAL;
-	}
-	public int getTCRETENCIONID() {
-		return TCRETENCIONID;
-	}
-	public void setTCRETENCIONID(int tCRETENCIONID) {
-		TCRETENCIONID = tCRETENCIONID;
-	}
-	public int getVALOR_RETENCION() {
-		return VALOR_RETENCION;
-	}
-	public void setVALOR_RETENCION(int vALOR_RETENCION) {
-		VALOR_RETENCION = vALOR_RETENCION;
-	}
-	public int getENVIO_RI() {
-		return ENVIO_RI;
-	}
-	public void setENVIO_RI(int eNVIO_RI) {
-		ENVIO_RI = eNVIO_RI;
-	}
-	public int getFACTURA_PROCESADA() {
-		return FACTURA_PROCESADA;
-	}
-	public void setFACTURA_PROCESADA(int fACTURA_PROCESADA) {
-		FACTURA_PROCESADA = fACTURA_PROCESADA;
-	}
-	public int getCONTRIBUCION_SEG() {
-		return CONTRIBUCION_SEG;
-	}
-	public void setCONTRIBUCION_SEG(int cONTRIBUCION_SEG) {
-		CONTRIBUCION_SEG = cONTRIBUCION_SEG;
-	}
+	public TcFacturasVantiveModel( int tcfacturascabId, int billRefNo) {
+		
+		super();
+		this.tcFacturasCabId =tcfacturascabId;
+		/*this.serieFac =serieFac;
+		this.noFac = noFac;
+		this.accountNo =account_No;
+		this.tecuentaid =tecuentaid;
+		this.swcustomerid =swcustomerid;
+		this.fechaEmision =fechaEmision;
+		this.usuarioEmision =usuarioEmision;
+		this.estado =estado;
+		this.nit =nit;
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.tipoFac =tipoFac;
+		this.tipoPago = tipoPago;
+		this.emisorPago = emisorPago;
+		this.idPago = idPago;
+		this.referenciaPago = referenciaPago;
+		this.montoPagado = montoPagado;
+		this.montoFactura = montoFactura;
+		this.swdatecreated = swdatecreated;
+		this.swcreatedby = swcreatedby;
+		this.timestamp = timestamp;
+		this.codElementoId = codElementoId;
+		this.teNumscontrId = teNumscontrId;*/
+		this.billRefNo = billRefNo;
+		/*this.billRefResets = billRefResets;
+		this.idRelacionado = idRelacionado;
+		this.tipoIdRelacionado = tipoIdRelacionado;
+		this.intentos = intentos;
+		this.departamento = departamento;
+		this.municipio = municipio;
+		this.fecVencimiento = fecVencimiento;
+		this.tcFacturasCabId = tcgFacturaId;
+		this.tcCorteCajaId = tcCorteCajaId;
+		this.tesalmacenesinvid = tesalmacenesinvid;
+		this.distribuidor = distribuidor;
+		this.puntoVenta = puntoVenta;
+		this.vendedor = vendedor;
+		this.desEstatustrib = desEstatustrib;
+		this.creditoFiscal = creditoFiscal;
+		this.giro =  giro;
+		this.numeroIva = numeroIva;
+		this.descuento = descuento;
+		this.liquidadoCobros = liquidadoCobros;
+		this.fechaLiqCobros = fechaLIqCobros;
+		this.montoFinal = montoFinal;
+		this.tcRetencionId = tcRetencionId;
+		this.valorRetencion = valorRetencion;
+		this.envioRi = envioRi;
+		this.facturaProcesada = facturaProcesada;
+		this.contribucionSeg = contribucionSeg;
+		this.idDoc = idDoc;*/
+	}
+
+	public int getTcFacturasCabId() {
+		return tcFacturasCabId;
+	}
+
+
+
+	public void setTcFacturasCabId(int tcFacturasCabId) {
+		this.tcFacturasCabId = tcFacturasCabId;
+	}
+
+
+
+	public String getSerieFac() {
+		return serieFac;
+	}
+
+
+
+	public void setSerieFac(String serieFac) {
+		this.serieFac = serieFac;
+	}
+
+
+
+	public int getNoFac() {
+		return noFac;
+	}
+
+
+
+	public void setNoFac(int noFac) {
+		this.noFac = noFac;
+	}
+
+
+
+	public int getAccountNo() {
+		return accountNo;
+	}
+
+
+
+	public void setAccountNo(int accountNo) {
+		this.accountNo = accountNo;
+	}
+
+
+
+	public int getTecuentaid() {
+		return tecuentaid;
+	}
+
+
+
+	public void setTecuentaid(int tecuentaid) {
+		this.tecuentaid = tecuentaid;
+	}
+
+
+
+	public int getSwcustomerid() {
+		return swcustomerid;
+	}
+
+
+
+	public void setSwcustomerid(int swcustomerid) {
+		this.swcustomerid = swcustomerid;
+	}
+
+
+
+	public String getFechaEmision() {
+		return fechaEmision;
+	}
+
+
+
+	public void setFechaEmision(String fechaEmision) {
+		this.fechaEmision = fechaEmision;
+	}
+
+
+
+	public String getUsuarioEmision() {
+		return usuarioEmision;
+	}
+
+
+
+	public void setUsuarioEmision(String usuarioEmision) {
+		this.usuarioEmision = usuarioEmision;
+	}
+
+
+
+	public String getEstado() {
+		return estado;
+	}
+
+
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+
+
+	public String getNit() {
+		return nit;
+	}
+
+
+
+	public void setNit(String nit) {
+		this.nit = nit;
+	}
+
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+
+
+	public String getTipoFac() {
+		return tipoFac;
+	}
+
+
+
+	public void setTipoFac(String tipoFac) {
+		this.tipoFac = tipoFac;
+	}
+
+
+
+	public String getTipoPago() {
+		return tipoPago;
+	}
+
+
+
+	public void setTipoPago(String tipoPago) {
+		this.tipoPago = tipoPago;
+	}
+
+
+
+	public String getEmisorPago() {
+		return emisorPago;
+	}
+
+
+
+	public void setEmisorPago(String emisorPago) {
+		this.emisorPago = emisorPago;
+	}
+
+
+
+	public String getIdPago() {
+		return idPago;
+	}
+
+
+
+	public void setIdPago(String idPago) {
+		this.idPago = idPago;
+	}
+
+
+
+	public String getReferenciaPago() {
+		return referenciaPago;
+	}
+
+
+
+	public void setReferenciaPago(String referenciaPago) {
+		this.referenciaPago = referenciaPago;
+	}
+
+
+
+	public int getMontoPagado() {
+		return montoPagado;
+	}
+
+
+
+	public void setMontoPagado(int montoPagado) {
+		this.montoPagado = montoPagado;
+	}
+
+
+
+	public int getMontoFactura() {
+		return montoFactura;
+	}
+
+
+
+	public void setMontoFactura(int montoFactura) {
+		this.montoFactura = montoFactura;
+	}
+
+
+
+	public String getSwdatecreated() {
+		return swdatecreated;
+	}
+
+
+
+	public void setSwdatecreated(String swdatecreated) {
+		this.swdatecreated = swdatecreated;
+	}
+
+
+
+	public String getSwcreatedby() {
+		return swcreatedby;
+	}
+
+
+
+	public void setSwcreatedby(String swcreatedby) {
+		this.swcreatedby = swcreatedby;
+	}
+
+
+
+	public int getTimestamp() {
+		return timestamp;
+	}
+
+
+
+	public void setTimestamp(int timestamp) {
+		this.timestamp = timestamp;
+	}
+
+
+
+	public int getCodElementoId() {
+		return codElementoId;
+	}
+
+
+
+	public void setCodElementoId(int codElementoId) {
+		this.codElementoId = codElementoId;
+	}
+
+
+
+	public int getTeumscontrid() {
+		return teNumscontrId;
+	}
+
+
+
+	public void setTeumscontrid(int teumscontrid) {
+		this.teNumscontrId = teumscontrid;
+	}
+
+
+
+	public int getBillRefNo() {
+		return billRefNo;
+	}
+
+
+
+	public void setBillRefNo(int billRefNo) {
+		this.billRefNo = billRefNo;
+	}
+
+
+
+	public int getBillRefResets() {
+		return billRefResets;
+	}
+
+
+
+	public void setBillRefResets(int billRefResets) {
+		this.billRefResets = billRefResets;
+	}
+
+
+
+	public int getIdRelacionado() {
+		return idRelacionado;
+	}
+
+
+
+	public void setIdRelacionado(int idRelacionado) {
+		this.idRelacionado = idRelacionado;
+	}
+
+
+
+	public int getTipoIdRelacionado() {
+		return tipoIdRelacionado;
+	}
+
+
+
+	public void setTipoIdRelacionado(int tipoIdRelacionado) {
+		this.tipoIdRelacionado = tipoIdRelacionado;
+	}
+
+
+
+	public int getIntentos() {
+		return intentos;
+	}
+
+
+
+	public void setIntentos(int intentos) {
+		this.intentos = intentos;
+	}
+
+
+
+	public String getDepartamento() {
+		return departamento;
+	}
+
+
+
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;
+	}
+
+
+
+	public String getMunicipio() {
+		return municipio;
+	}
+
+
+
+	public void setMunicipio(String municipio) {
+		this.municipio = municipio;
+	}
+
+
+
+	public String getFecVencimiento() {
+		return fecVencimiento;
+	}
+
+
+
+	public void setFecVencimiento(String fecVencimiento) {
+		this.fecVencimiento = fecVencimiento;
+	}
+
+
+
+	public int getTcgfacturaid() {
+		return tcgfacturaid;
+	}
+
+
+
+	public void setTcgfacturaid(int tcgfacturaid) {
+		this.tcgfacturaid = tcgfacturaid;
+	}
+
+
+
+	public int getTccortecajaid() {
+		return tcCorteCajaId;
+	}
+
+
+
+	public void setTccortecajaid(int tccortecajaid) {
+		this.tcCorteCajaId = tccortecajaid;
+	}
+
+
+
+	public int getTesalmacenesinvid() {
+		return tesalmacenesinvid;
+	}
+
+
+
+	public void setTesalmacenesinvid(int tesalmacenesinvid) {
+		this.tesalmacenesinvid = tesalmacenesinvid;
+	}
+
+
+
+	public int getDistribuidor() {
+		return distribuidor;
+	}
+
+
+
+	public void setDistribuidor(int distribuidor) {
+		this.distribuidor = distribuidor;
+	}
+
+
+
+	public int getPuntoVenta() {
+		return puntoVenta;
+	}
+
+
+
+	public void setPuntoVenta(int puntoVenta) {
+		this.puntoVenta = puntoVenta;
+	}
+
+
+
+	public int getVendedor() {
+		return vendedor;
+	}
+
+
+
+	public void setVendedor(int vendedor) {
+		this.vendedor = vendedor;
+	}
+
+
+
+	public String getDesEstatustrib() {
+		return desEstatustrib;
+	}
+
+
+
+	public void setDesEstatustrib(String desEstatustrib) {
+		this.desEstatustrib = desEstatustrib;
+	}
+
+
+
+	public String getCreditoFiscal() {
+		return creditoFiscal;
+	}
+
+
+
+	public void setCreditoFiscal(String creditoFiscal) {
+		this.creditoFiscal = creditoFiscal;
+	}
+
+
+
+	public String getGiro() {
+		return giro;
+	}
+
+
+
+	public void setGiro(String giro) {
+		this.giro = giro;
+	}
+
+
+
+	public String getNumeroIva() {
+		return numeroIva;
+	}
+
+
+
+	public void setNumeroIva(String numeroIva) {
+		this.numeroIva = numeroIva;
+	}
+
+
+
+	public int getDescuento() {
+		return descuento;
+	}
+
+
+
+	public void setDescuento(int descuento) {
+		this.descuento = descuento;
+	}
+
+
+
+	public String getLiquidadoCobros() {
+		return liquidadoCobros;
+	}
+
+
+
+	public void setLiquidadoCobros(String liquidadoCobros) {
+		this.liquidadoCobros = liquidadoCobros;
+	}
+
+
+
+	public String getFechaLiqCobros() {
+		return fechaLiqCobros;
+	}
+
+
+
+	public void setFechaLiqCobros(String fechaLiqCobros) {
+		this.fechaLiqCobros = fechaLiqCobros;
+	}
+
+
+
+	public int getMontoFinal() {
+		return montoFinal;
+	}
+
+
+
+	public void setMontoFinal(int montoFinal) {
+		this.montoFinal = montoFinal;
+	}
+
+
+
+	public int getTcretencionid() {
+		return tcRetencionId;
+	}
+
+
+
+	public void setTcretencionid(int tcretencionid) {
+		this.tcRetencionId = tcretencionid;
+	}
+
+
+
+	public int getValorRetencion() {
+		return valorRetencion;
+	}
+
+
+
+	public void setValorRetencion(int valorRetencion) {
+		this.valorRetencion = valorRetencion;
+	}
+
+
+
+	public int getEnvioRi() {
+		return envioRi;
+	}
+
+
+
+	public void setEnvioRi(int envioRi) {
+		this.envioRi = envioRi;
+	}
+
+
+
+	public int getFacturaProcesada() {
+		return facturaProcesada;
+	}
+
+
+
+	public void setFacturaProcesada(int facturaProcesada) {
+		this.facturaProcesada = facturaProcesada;
+	}
+
+
+
+	public int getContribucionSeg() {
+		return contribucionSeg;
+	}
+
+
+
+	public void setContribucionSeg(int contribucionSeg) {
+		this.contribucionSeg = contribucionSeg;
+	}
+	
 	public double getIdDoc() {
 		return idDoc;
 	}

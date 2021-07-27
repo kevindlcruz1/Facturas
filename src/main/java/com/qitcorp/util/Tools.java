@@ -8,10 +8,10 @@ import com.qitcorp.model.TcFacturasVantiveModel;
 public class Tools {
 	
 	
-	public static final String tc_facturas_vantive = "src/main/resources/config.properties";
+	public static final String facturasVantive = "src/main/resources/config.properties";
 	//public static final String tc_facturas_vantive = "config.properties";
 	
-	public static final String obtener_tc_facturas_vantive_vw = "select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,"
+	public static final String obtenerFacturasVantive = "select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,"
 			+ "  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,"
 			+ "  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,"
 			+ "  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,"
