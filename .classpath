@@ -35,7 +35,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/developer/.p2/pool/plugins/javax.wsdl_1.6.2.v201012040545.jar"/>
-	<classpathentry kind="lib" path="C:/Users/developer/.p2/pool/plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
