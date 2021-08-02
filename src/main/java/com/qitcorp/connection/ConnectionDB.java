@@ -20,7 +20,7 @@ public class ConnectionDB {
 		Properties pp = new Properties();
 		
 		try {
-			pp.load(new FileReader(Tools.tc_facturas_vantive));
+			pp.load(new FileReader(Tools.facturasVantive));
 			String url = "jdbc:oracle:thin:@" + pp.getProperty("host") + ":" + pp.getProperty("port") + ":"
 					+ pp.getProperty("sid");
 			conn = DriverManager.getConnection(url, pp.getProperty("user"), pp.getProperty("password"));
