@@ -5154,3 +5154,481 @@ XML received:
 2021-08-02 18:26:50  [ main:10482 ] - [ INFO ]  OBJETO FACTURAS: 209832868
 2021-08-02 18:26:50  [ main:10482 ] - [ INFO ]  Resultado de consumo: 
 2021-08-02 18:26:50  [ main:10482 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-08-02 20:08:03  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-08-02 20:08:06  [ main:2938 ] - [ INFO ]  select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,  ID_PAGO, REFERENCIA_PAGO, MONTO_PAGADO, MONTO_FACTURA, SWDATECREATED, SWCREATEDBY, TIMESTAMP, COD_ELEMENTOID,  TENUMSCONTRID, BILL_REF_NO, BILL_REF_RESETS, ID_RELACIONADO, TIPO_ID_RELACIONADO, INTENTOS, DEPARTAMENTO, MUNICIPIO,  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw 
+2021-08-02 20:08:06  [ main:3149 ] - [ INFO ]  cierra conexion en metodo finaliza conexion.
+2021-08-02 20:08:06  [ main:3150 ] - [ INFO ]  se manda a llamar el metodo de finaliza conexion en obtenerFacturasVantive
+2021-08-02 20:08:09  [ main:5789 ] - [ INFO ]  cierra conexion en metodo finaliza conexion.
+2021-08-02 20:08:09  [ main:5791 ] - [ INFO ]  se manda a llamar el metodo de finaliza conexion en obtenerParametrosWS
+2021-08-02 20:08:12  [ main:8268 ] - [ INFO ]  Ejecuta => {CALL SWBAPPS.TCG_FNC_WS_PKG.WS_CREA_DOC1_PRO(?,?,?,?,?)} => resultado: true
+2021-08-02 20:08:12  [ main:8349 ] - [ INFO ]  cierra conexion en metodo ejecutaFacturasSP2.
+2021-08-02 20:08:12  [ main:8350 ] - [ INFO ]  [ProcesoFacturas] Ejecuta SP para id => 23835382 Resultado => true
+2021-08-02 20:08:12  [ main:8386 ] - [ DEBUG ]  find: resourceName='commons-logging.properties'
+2021-08-02 20:08:12  [ main:8386 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-08-02 20:08:12  [ main:8387 ] - [ DEBUG ]  Could not find resource: commons-logging.properties
+2021-08-02 20:08:12  [ main:8387 ] - [ DEBUG ]  find: resourceName='org/apache/commons/logging/commons-logging.properties'
+2021-08-02 20:08:12  [ main:8387 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-08-02 20:08:12  [ main:8388 ] - [ DEBUG ]  Could not find resource: org/apache/commons/logging/commons-logging.properties
+2021-08-02 20:08:12  [ main:8391 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.commons.logging.LogFactory'
+2021-08-02 20:08:12  [ main:8392 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.commons.logging.LogFactory'
+2021-08-02 20:08:12  [ main:8394 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-08-02 20:08:12  [ main:8394 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.commons.logging.LogFactory
+2021-08-02 20:08:12  [ main:8395 ] - [ DEBUG ]  find: className='org.apache.commons.logging.impl.LogFactoryImpl'
+2021-08-02 20:08:12  [ main:8395 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/developer/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/org/apache/commons/logging/impl/LogFactoryImpl.class'
+2021-08-02 20:08:12  [ main:8396 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.commons.logging.impl.LogFactoryImpl' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-08-02 20:08:12  [ main:8402 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory'
+2021-08-02 20:08:12  [ main:8402 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory', lookup property 'axis.EngineConfigFactory'
+2021-08-02 20:08:12  [ main:8403 ] - [ DEBUG ]  find: resourceName = 'org.apache.axis.EngineConfigurationFactory'
+2021-08-02 20:08:12  [ main:8403 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.EngineConfigurationFactory'
+2021-08-02 20:08:12  [ main:8404 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.EngineConfigurationFactory'
+2021-08-02 20:08:12  [ main:8404 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-08-02 20:08:12  [ main:8404 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.EngineConfigurationFactory
+2021-08-02 20:08:12  [ main:8404 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory', mapping to constants
+2021-08-02 20:08:12  [ main:8405 ] - [ DEBUG ]  find: className='org.apache.axis.configuration.EngineConfigurationFactoryServlet'
+2021-08-02 20:08:12  [ main:8405 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/developer/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/configuration/EngineConfigurationFactoryServlet.class'
+2021-08-02 20:08:12  [ main:8406 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.configuration.EngineConfigurationFactoryServlet' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-08-02 20:08:12  [ main:8409 ] - [ DEBUG ]  getBundle(org.apache.axis,org.apache.axis.i18n,resource,null,...)
+2021-08-02 20:08:12  [ main:8418 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US
+2021-08-02 20:08:12  [ main:8418 ] - [ DEBUG ]  Created org.apache.axis.i18n.resource, linked to parent null
+2021-08-02 20:08:12  [ main:8419 ] - [ DEBUG ]  getBundle(org.apache.axis,org.apache.axis.utils,resource,null,...)
+2021-08-02 20:08:12  [ main:8420 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.utils.resource, locale en_US
+2021-08-02 20:08:12  [ main:8421 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US
+2021-08-02 20:08:12  [ main:8421 ] - [ DEBUG ]  Root package not found, cross link to org.apache.axis.i18n.resource
+2021-08-02 20:08:12  [ main:8421 ] - [ DEBUG ]  Root package not found, cross link to org.apache.axis.i18n.resource
+2021-08-02 20:08:12  [ main:8421 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(engineConfigLoadFactory)
+2021-08-02 20:08:12  [ main:8422 ] - [ DEBUG ]  Factory org.apache.axis.configuration.EngineConfigurationFactoryServlet Ignored: unable to load/resolve class.
+2021-08-02 20:08:12  [ main:8422 ] - [ DEBUG ]  find: className='org.apache.axis.configuration.EngineConfigurationFactoryDefault'
+2021-08-02 20:08:12  [ main:8423 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/developer/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/configuration/EngineConfigurationFactoryDefault.class'
+2021-08-02 20:08:12  [ main:8423 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.configuration.EngineConfigurationFactoryDefault' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-08-02 20:08:12  [ main:8423 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(engineFactory)
+2021-08-02 20:08:12  [ main:8424 ] - [ DEBUG ]  Got EngineFactory: org.apache.axis.configuration.EngineConfigurationFactoryDefault
+2021-08-02 20:08:12  [ main:8427 ] - [ DEBUG ]  Enter: AxisEngine::init
+2021-08-02 20:08:12  [ main:8523 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+2021-08-02 20:08:12  [ main:8523 ] - [ DEBUG ]  Attachment support is enabled?  false
+2021-08-02 20:08:12  [ main:8523 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachDisabled)
+2021-08-02 20:08:12  [ main:8523 ] - [ WARN ]  Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-08-02 20:08:12  [ main:8541 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(oddDigits00)
+2021-08-02 20:08:12  [ main:8541 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(badChars01)
+2021-08-02 20:08:12  [ main:8593 ] - [ DEBUG ]  Exit: AxisEngine::init
+2021-08-02 20:08:12  [ main:8600 ] - [ DEBUG ]  @7d1cfb8b added parameter >name:       {http://www.qit.com/wsdoc1/intf/client}WsCreateBillRequest
+typeEntry:  null
+mode:       IN
+position:   0
+isReturn:   false
+typeQName:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillRequest
+javaType:   class com.qit.www.wsdoc1.intf.client.WsCreateBillRequest
+inHeader:   false
+outHeader:  false
+@48e92c5c<total parameters:1
+2021-08-02 20:08:12  [ main:8600 ] - [ DEBUG ]  @7d1cfb8bsetReturnType({http://www.qit.com/wsdoc1/intf/client}>WsCreateBillResponse)
+2021-08-02 20:08:12  [ main:8605 ] - [ INFO ]  Parametro request: 209832868
+2021-08-02 20:08:12  [ main:8651 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(transport00)
+2021-08-02 20:08:12  [ main:8651 ] - [ DEBUG ]  Transport is org.apache.axis.transport.http.HTTPTransport@421bba99
+2021-08-02 20:08:12  [ main:8654 ] - [ DEBUG ]  Enter: Call::invoke(ns, meth, args)
+2021-08-02 20:08:12  [ main:8660 ] - [ DEBUG ]  operation=name:        WsCreateBill
+returnQName: {http://www.qit.com/wsdoc1/intf/client}WsCreateBillResponse
+returnType:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillResponse
+returnClass: class com.qit.www.wsdoc1.intf.client.WsCreateBillResponse
+elementQName:null
+soapAction:  null
+style:       document
+use:         literal
+numInParams: 1
+method:null
+ ParameterDesc[0]:
+  name:       {http://www.qit.com/wsdoc1/intf/client}WsCreateBillRequest
+  typeEntry:  null
+  mode:       IN
+  position:   0
+  isReturn:   false
+  typeQName:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillRequest
+  javaType:   class com.qit.www.wsdoc1.intf.client.WsCreateBillRequest
+  inHeader:   false
+  outHeader:  false
+
+
+2021-08-02 20:08:12  [ main:8660 ] - [ DEBUG ]  operation.getNumParams()=1
+2021-08-02 20:08:12  [ main:8660 ] - [ DEBUG ]  getParamList number of params: 1
+2021-08-02 20:08:12  [ main:8663 ] - [ DEBUG ]  Enter: Call::invoke(RPCElement)
+2021-08-02 20:08:12  [ main:8670 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+2021-08-02 20:08:12  [ main:8670 ] - [ DEBUG ]  Attachment support is enabled?  false
+2021-08-02 20:08:12  [ main:8675 ] - [ DEBUG ]  Enter: SOAPPart ctor(FORM_SOAPENVELOPE)
+2021-08-02 20:08:12  [ main:8675 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-08-02 20:08:12  [ main:8675 ] - [ DEBUG ]  Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope)
+2021-08-02 20:08:12  [ main:8675 ] - [ DEBUG ]  Exit: SOAPPart ctor()
+2021-08-02 20:08:12  [ main:8676 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(addBody00)
+2021-08-02 20:08:12  [ main:8676 ] - [ DEBUG ]  Adding body element to message...
+2021-08-02 20:08:12  [ main:8676 ] - [ DEBUG ]  Enter: Call::invoke()
+2021-08-02 20:08:12  [ main:8676 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-08-02 20:08:12  [ main:8676 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-08-02 20:08:12  [ main:8676 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-08-02 20:08:12  [ main:8677 ] - [ DEBUG ]  MessageContext: setTargetService()
+2021-08-02 20:08:12  [ main:8677 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(noService10)
+2021-08-02 20:08:12  [ main:8678 ] - [ DEBUG ]  Exception: 
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:83)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:43)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:83)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:43)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-08-02 20:08:12  [ main:8680 ] - [ DEBUG ]  MessageContext: setServiceHandler(null)
+2021-08-02 20:08:12  [ main:8681 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(targetService)
+2021-08-02 20:08:12  [ main:8682 ] - [ DEBUG ]  Target service:  
+2021-08-02 20:08:12  [ main:8682 ] - [ DEBUG ]  MessageContext: setTargetService()
+2021-08-02 20:08:12  [ main:8682 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(noService10)
+2021-08-02 20:08:12  [ main:8682 ] - [ DEBUG ]  Exception: 
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:83)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:43)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:83)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:43)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-08-02 20:08:12  [ main:8683 ] - [ DEBUG ]  MessageContext: setServiceHandler(null)
+2021-08-02 20:08:12  [ main:8686 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-08-02 20:08:12  [ main:8686 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-08-02 20:08:12  [ main:8686 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-08-02 20:08:12  [ main:8686 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8687 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-08-02 20:08:12  [ main:8687 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8687 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-08-02 20:08:12  [ main:8687 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8687 ] - [ DEBUG ]  register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+2021-08-02 20:08:12  [ main:8687 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8688 ] - [ DEBUG ]  register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+2021-08-02 20:08:12  [ main:8688 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:12  [ main:8688 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-08-02 20:08:12  [ main:8691 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:12  [ main:8691 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-08-02 20:08:12  [ main:8691 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8691 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-08-02 20:08:12  [ main:8692 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:12  [ main:8692 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillRequest
+2021-08-02 20:08:12  [ main:8695 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:12  [ main:8695 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:bill_ref_no
+2021-08-02 20:08:12  [ main:8698 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.encoding.XMLEncoder'
+2021-08-02 20:08:12  [ main:8698 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.encoding.XMLEncoder'
+2021-08-02 20:08:12  [ main:8698 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-08-02 20:08:12  [ main:8699 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.encoding.XMLEncoder
+2021-08-02 20:08:12  [ main:8699 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:12  [ main:8699 ] - [ DEBUG ]  End element bill_ref_no
+2021-08-02 20:08:12  [ main:8699 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:12  [ main:8700 ] - [ DEBUG ]  End element WsCreateBillRequest
+2021-08-02 20:08:12  [ main:8700 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:12  [ main:8700 ] - [ DEBUG ]  End element soapenv:Body
+2021-08-02 20:08:12  [ main:8700 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:12  [ main:8700 ] - [ DEBUG ]  End element soapenv:Envelope
+2021-08-02 20:08:12  [ main:8700 ] - [ DEBUG ]  <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><WsCreateBillRequest xmlns="http://www.qit.com/wsdoc1/intf/client"><bill_ref_no>209832868</bill_ref_no></WsCreateBillRequest></soapenv:Body></soapenv:Envelope>
+2021-08-02 20:08:12  [ main:8701 ] - [ DEBUG ]  Enter: AxisClient::invoke
+2021-08-02 20:08:12  [ main:8701 ] - [ DEBUG ]  EngineHandler: null
+2021-08-02 20:08:12  [ main:8704 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(axisUserAgent)
+2021-08-02 20:08:12  [ main:8707 ] - [ DEBUG ]  Enter: SimpleChain::invoke
+2021-08-02 20:08:12  [ main:8707 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(enter00)
+2021-08-02 20:08:12  [ main:8707 ] - [ DEBUG ]  Enter:  HTTPSender::invoke
+2021-08-02 20:08:12  [ main:8708 ] - [ DEBUG ]  Enter: SOAPPart::saveChanges
+2021-08-02 20:08:12  [ main:8710 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8710 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:12  [ main:8711 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-08-02 20:08:12  [ main:8712 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:12  [ main:8712 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-08-02 20:08:12  [ main:8712 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:12  [ main:8712 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillRequest
+2021-08-02 20:08:12  [ main:8712 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:12  [ main:8713 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:bill_ref_no
+2021-08-02 20:08:12  [ main:8713 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:12  [ main:8713 ] - [ DEBUG ]  End element bill_ref_no
+2021-08-02 20:08:12  [ main:8713 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:12  [ main:8713 ] - [ DEBUG ]  End element WsCreateBillRequest
+2021-08-02 20:08:12  [ main:8713 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:12  [ main:8714 ] - [ DEBUG ]  End element soapenv:Body
+2021-08-02 20:08:12  [ main:8714 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:12  [ main:8714 ] - [ DEBUG ]  End element soapenv:Envelope
+2021-08-02 20:08:12  [ main:8714 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-08-02 20:08:12  [ main:8714 ] - [ DEBUG ]  Setting current message form to: FORM_OPTIMIZED (currentMessage is now org.apache.axis.utils.ByteArray)
+2021-08-02 20:08:12  [ main:8714 ] - [ DEBUG ]  Exit: SOAPPart::saveChanges(): org.apache.axis.utils.ByteArray@5ef6ae06
+2021-08-02 20:08:12  [ main:8718 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory'
+2021-08-02 20:08:12  [ main:8718 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory', lookup property 'axis.socketFactory'
+2021-08-02 20:08:12  [ main:8718 ] - [ DEBUG ]  find: resourceName = 'org.apache.axis.components.net.SocketFactory'
+2021-08-02 20:08:12  [ main:8718 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.net.SocketFactory'
+2021-08-02 20:08:12  [ main:8719 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.net.SocketFactory'
+2021-08-02 20:08:12  [ main:8719 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-08-02 20:08:12  [ main:8719 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.net.SocketFactory
+2021-08-02 20:08:12  [ main:8719 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory', mapping to constants
+2021-08-02 20:08:12  [ main:8719 ] - [ DEBUG ]  find: className='org.apache.axis.components.net.DefaultSocketFactory'
+2021-08-02 20:08:12  [ main:8720 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/developer/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/components/net/DefaultSocketFactory.class'
+2021-08-02 20:08:12  [ main:8720 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.components.net.DefaultSocketFactory' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-08-02 20:08:12  [ main:8721 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.net.TransportClientProperties'
+2021-08-02 20:08:12  [ main:8721 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.net.TransportClientProperties'
+2021-08-02 20:08:12  [ main:8721 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-08-02 20:08:12  [ main:8722 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.net.TransportClientProperties
+2021-08-02 20:08:12  [ main:8803 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(createdHTTP00)
+2021-08-02 20:08:12  [ main:8804 ] - [ DEBUG ]  Created an insecure HTTP connection
+2021-08-02 20:08:12  [ main:8804 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(xmlSent00)
+2021-08-02 20:08:12  [ main:8804 ] - [ DEBUG ]  XML sent:
+2021-08-02 20:08:12  [ main:8804 ] - [ DEBUG ]  ---------------------------------------------------
+2021-08-02 20:08:12  [ main:8806 ] - [ DEBUG ]  POST /wsdoc1/ HTTP/1.0
+Content-Type: text/xml; charset=utf-8
+Accept: application/soap+xml, application/dime, multipart/related, text/*
+User-Agent: Axis/1.4
+Host: 10.231.128.139:7003
+Cache-Control: no-cache
+Pragma: no-cache
+SOAPAction: ""
+Content-Length: 386
+
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><WsCreateBillRequest xmlns="http://www.qit.com/wsdoc1/intf/client"><bill_ref_no>209832868</bill_ref_no></WsCreateBillRequest></soapenv:Body></soapenv:Envelope>
+2021-08-02 20:08:14  [ main:10724 ] - [ DEBUG ]  HTTP/1.1 200 OK
+2021-08-02 20:08:14  [ main:10724 ] - [ DEBUG ]  Connection close
+2021-08-02 20:08:14  [ main:10724 ] - [ DEBUG ]  Date Tue, 03 Aug 2021 02:07:58 GMT
+2021-08-02 20:08:14  [ main:10725 ] - [ DEBUG ]  Content-Length 290
+2021-08-02 20:08:14  [ main:10725 ] - [ DEBUG ]  Content-Type text/xml; charset=UTF-8
+2021-08-02 20:08:14  [ main:10725 ] - [ DEBUG ]  SOAPAction ""
+2021-08-02 20:08:14  [ main:10725 ] - [ DEBUG ]  Accept text/xml
+2021-08-02 20:08:14  [ main:10727 ] - [ DEBUG ]  Enter: SOAPPart ctor(FORM_INPUTSTREAM)
+2021-08-02 20:08:14  [ main:10727 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-08-02 20:08:14  [ main:10728 ] - [ DEBUG ]  Setting current message form to: FORM_INPUTSTREAM (currentMessage is now org.apache.axis.transport.http.SocketInputStream)
+2021-08-02 20:08:14  [ main:10728 ] - [ DEBUG ]  Exit: SOAPPart ctor()
+2021-08-02 20:08:14  [ main:10728 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(xmlRecd00)
+2021-08-02 20:08:14  [ main:10728 ] - [ DEBUG ]  
+XML received:
+2021-08-02 20:08:14  [ main:10728 ] - [ DEBUG ]  -----------------------------------------------
+2021-08-02 20:08:14  [ main:10728 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-08-02 20:08:14  [ main:10728 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-08-02 20:08:14  [ main:10729 ] - [ DEBUG ]  current form is FORM_INPUTSTREAM
+2021-08-02 20:08:14  [ main:10735 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10736 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.EnvelopeHandler@5f9678e1
+2021-08-02 20:08:14  [ main:10739 ] - [ DEBUG ]  Enter: DeserializationContext::startPrefixMapping(env, http://schemas.xmlsoap.org/soap/envelope/)
+2021-08-02 20:08:14  [ main:10739 ] - [ DEBUG ]  Exit: DeserializationContext::startPrefixMapping()
+2021-08-02 20:08:14  [ main:10739 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope)
+2021-08-02 20:08:14  [ main:10739 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10739 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.EnvelopeBuilder@1d730606
+2021-08-02 20:08:14  [ main:10740 ] - [ DEBUG ]  Pushing element Envelope
+2021-08-02 20:08:14  [ main:10740 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-08-02 20:08:14  [ main:10740 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Header)
+2021-08-02 20:08:14  [ main:10740 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10740 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.HeaderBuilder@3b00856b
+2021-08-02 20:08:14  [ main:10741 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(newElem00)
+2021-08-02 20:08:14  [ main:10741 ] - [ DEBUG ]  New MessageElement (org.apache.axis.message.SOAPHeader@3016fd5e) named {env}Header
+2021-08-02 20:08:14  [ main:10741 ] - [ DEBUG ]  Pushing element Header
+2021-08-02 20:08:14  [ main:10741 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-08-02 20:08:14  [ main:10741 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Header)
+2021-08-02 20:08:14  [ main:10741 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-08-02 20:08:14  [ main:10741 ] - [ DEBUG ]  Popping handler org.apache.axis.message.HeaderBuilder@3b00856b
+2021-08-02 20:08:14  [ main:10742 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.SOAPEnvelope:Envelope
+2021-08-02 20:08:14  [ main:10742 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-08-02 20:08:14  [ main:10742 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Body)
+2021-08-02 20:08:14  [ main:10743 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10743 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.BodyBuilder@6b3e12b5
+2021-08-02 20:08:14  [ main:10744 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(newElem00)
+2021-08-02 20:08:14  [ main:10744 ] - [ DEBUG ]  New MessageElement (org.apache.axis.message.SOAPBody@5aac4250) named {env}Body
+2021-08-02 20:08:14  [ main:10744 ] - [ DEBUG ]  Pushing element Body
+2021-08-02 20:08:14  [ main:10744 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-08-02 20:08:14  [ main:10744 ] - [ DEBUG ]  Enter: DeserializationContext::startPrefixMapping(, http://www.qit.com/wsdoc1/intf/client)
+2021-08-02 20:08:14  [ main:10745 ] - [ DEBUG ]  Exit: DeserializationContext::startPrefixMapping()
+2021-08-02 20:08:14  [ main:10745 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, WsCreateBillResponse)
+2021-08-02 20:08:14  [ main:10745 ] - [ DEBUG ]  Enter: BodyBuilder::onStartChild()
+2021-08-02 20:08:14  [ main:10745 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(newElem00)
+2021-08-02 20:08:14  [ main:10745 ] - [ DEBUG ]  New MessageElement (org.apache.axis.message.RPCElement@1338fb5) named {}WsCreateBillResponse
+2021-08-02 20:08:14  [ main:10745 ] - [ DEBUG ]  Exit: BodyBuilder::onStartChild()
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.SOAPHandler@42463763
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  Pushing element WsCreateBillResponse
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, mensaje)
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.SOAPHandler@59f63e24
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(newElem00)
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  New MessageElement (org.apache.axis.message.MessageElement@61f05988) named {}mensaje
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  Pushing element mensaje
+2021-08-02 20:08:14  [ main:10746 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-08-02 20:08:14  [ main:10747 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, mensaje)
+2021-08-02 20:08:14  [ main:10747 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-08-02 20:08:14  [ main:10747 ] - [ DEBUG ]  Popping handler org.apache.axis.message.SOAPHandler@59f63e24
+2021-08-02 20:08:14  [ main:10747 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.RPCElement:WsCreateBillResponse
+2021-08-02 20:08:14  [ main:10747 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-08-02 20:08:14  [ main:10747 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, ruta_pdf)
+2021-08-02 20:08:14  [ main:10747 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10748 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.SOAPHandler@7ca33c24
+2021-08-02 20:08:14  [ main:10748 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(newElem00)
+2021-08-02 20:08:14  [ main:10748 ] - [ DEBUG ]  New MessageElement (org.apache.axis.message.MessageElement@fade1fc) named {}ruta_pdf
+2021-08-02 20:08:14  [ main:10748 ] - [ DEBUG ]  Pushing element ruta_pdf
+2021-08-02 20:08:14  [ main:10748 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-08-02 20:08:14  [ main:10748 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, ruta_pdf)
+2021-08-02 20:08:14  [ main:10749 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-08-02 20:08:14  [ main:10749 ] - [ DEBUG ]  Popping handler org.apache.axis.message.SOAPHandler@7ca33c24
+2021-08-02 20:08:14  [ main:10750 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.RPCElement:WsCreateBillResponse
+2021-08-02 20:08:14  [ main:10750 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-08-02 20:08:14  [ main:10750 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, WsCreateBillResponse)
+2021-08-02 20:08:14  [ main:10750 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-08-02 20:08:14  [ main:10750 ] - [ DEBUG ]  Popping handler org.apache.axis.message.SOAPHandler@42463763
+2021-08-02 20:08:14  [ main:10750 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.SOAPBody:Body
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Enter: DeserializationContext::endPrefixMapping()
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Exit: DeserializationContext::endPrefixMapping()
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Body)
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Popping handler org.apache.axis.message.BodyBuilder@6b3e12b5
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.SOAPEnvelope:Envelope
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope)
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Popping handler org.apache.axis.message.EnvelopeBuilder@1d730606
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Popped element stack to null
+2021-08-02 20:08:14  [ main:10751 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-08-02 20:08:14  [ main:10752 ] - [ DEBUG ]  Enter: DeserializationContext::endPrefixMapping(env)
+2021-08-02 20:08:14  [ main:10752 ] - [ DEBUG ]  Exit: DeserializationContext::endPrefixMapping()
+2021-08-02 20:08:14  [ main:10752 ] - [ DEBUG ]  Enter: DeserializationContext::endDocument()
+2021-08-02 20:08:14  [ main:10752 ] - [ DEBUG ]  Exit: DeserializationContext::endDocument()
+2021-08-02 20:08:14  [ main:10752 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-08-02 20:08:14  [ main:10752 ] - [ DEBUG ]  Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope)
+2021-08-02 20:08:14  [ main:10752 ] - [ DEBUG ]  Exit: SOAPPart::getAsSOAPEnvelope
+2021-08-02 20:08:14  [ main:10753 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:14  [ main:10753 ] - [ DEBUG ]  register 'env' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-08-02 20:08:14  [ main:10753 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:14  [ main:10753 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-08-02 20:08:14  [ main:10753 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:14  [ main:10753 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-08-02 20:08:14  [ main:10754 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-08-02 20:08:14  [ main:10754 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-08-02 20:08:14  [ main:10754 ] - [ DEBUG ]  SAXOutputter.startElement ['http://www.qit.com/wsdoc1/intf/client' WsCreateBillResponse]
+2021-08-02 20:08:14  [ main:10754 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:14  [ main:10754 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillResponse
+2021-08-02 20:08:14  [ main:10754 ] - [ DEBUG ]  SAXOutputter.startElement ['http://www.qit.com/wsdoc1/intf/client' mensaje]
+2021-08-02 20:08:14  [ main:10754 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:mensaje
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  SAXOutputter.endElement ['http://www.qit.com/wsdoc1/intf/client' mensaje]
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  End element mensaje
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  SAXOutputter.startElement ['http://www.qit.com/wsdoc1/intf/client' ruta_pdf]
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:ruta_pdf
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  SAXOutputter.characters ['/app/app_interfaz/DOC1data/SV/ImprCAM_209832868.pdf']
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  SAXOutputter.endElement ['http://www.qit.com/wsdoc1/intf/client' ruta_pdf]
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  End element ruta_pdf
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  SAXOutputter.endElement ['http://www.qit.com/wsdoc1/intf/client' WsCreateBillResponse]
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:14  [ main:10755 ] - [ DEBUG ]  End element WsCreateBillResponse
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  End element env:Body
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  End element env:Envelope
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><WsCreateBillResponse xmlns="http://www.qit.com/wsdoc1/intf/client"><mensaje/><ruta_pdf>/app/app_interfaz/DOC1data/SV/ImprCAM_209832868.pdf</ruta_pdf></WsCreateBillResponse></env:Body></env:Envelope>
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(exit00)
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  Exit:  HTTPDispatchHandler::invoke
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  Exit: SimpleChain::invoke
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(semanticCheck00)
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  Doing SOAP semantic checks...
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-08-02 20:08:14  [ main:10756 ] - [ DEBUG ]  Exit: AxisClient::invoke
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  Exit: Call::invoke()
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  Pushing handler org.apache.axis.message.RPCHandler@72c28d64
+2021-08-02 20:08:14  [ main:10757 ] - [ DEBUG ]  Enter: DeserializationContext::startPrefixMapping(, http://www.qit.com/wsdoc1/intf/client)
+2021-08-02 20:08:14  [ main:10758 ] - [ DEBUG ]  Exit: DeserializationContext::startPrefixMapping()
+2021-08-02 20:08:14  [ main:10758 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, WsCreateBillResponse)
+2021-08-02 20:08:14  [ main:10758 ] - [ DEBUG ]  Enter: RPCHandler.onStartChild()
+2021-08-02 20:08:14  [ main:10758 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(typeFromAttr00)
+2021-08-02 20:08:14  [ main:10758 ] - [ DEBUG ]  Type from attributes is:  null
+2021-08-02 20:08:14  [ main:10759 ] - [ DEBUG ]  Exit: RPCHandler.onStartChild()
+2021-08-02 20:08:14  [ main:10759 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10759 ] - [ DEBUG ]  Pushing handler org.apache.axis.encoding.ser.BeanDeserializer@3700ec9c
+2021-08-02 20:08:14  [ main:10759 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-08-02 20:08:14  [ main:10759 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, mensaje)
+2021-08-02 20:08:14  [ main:10764 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10764 ] - [ DEBUG ]  Pushing handler org.apache.axis.encoding.ser.SimpleDeserializer@8692d67
+2021-08-02 20:08:14  [ main:10764 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-08-02 20:08:14  [ main:10764 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, mensaje)
+2021-08-02 20:08:14  [ main:10764 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-08-02 20:08:14  [ main:10764 ] - [ DEBUG ]  Popping handler org.apache.axis.encoding.ser.SimpleDeserializer@8692d67
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00)
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Set value  in target org.apache.axis.encoding.ser.BeanPropertyTarget@753432a2
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00)
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Set value  in target org.apache.axis.encoding.CallbackTarget@23bff419
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.RPCElement:WsCreateBillResponse
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Enter: DeserializationContext::startElement(http://www.qit.com/wsdoc1/intf/client, ruta_pdf)
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Pushing handler org.apache.axis.encoding.ser.SimpleDeserializer@8692d67
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Exit: DeserializationContext::startElement()
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, ruta_pdf)
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Popping handler org.apache.axis.encoding.ser.SimpleDeserializer@8692d67
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00)
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  Set value /app/app_interfaz/DOC1data/SV/ImprCAM_209832868.pdf in target org.apache.axis.encoding.ser.BeanPropertyTarget@4983159f
+2021-08-02 20:08:14  [ main:10765 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00)
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Set value /app/app_interfaz/DOC1data/SV/ImprCAM_209832868.pdf in target org.apache.axis.encoding.CallbackTarget@44e3a2b2
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.RPCElement:WsCreateBillResponse
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Enter: DeserializationContext::endElement(http://www.qit.com/wsdoc1/intf/client, WsCreateBillResponse)
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Popping handler org.apache.axis.encoding.ser.BeanDeserializer@3700ec9c
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00)
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Set value com.qit.www.wsdoc1.intf.client.WsCreateBillResponse@a3b59ebc in target org.apache.axis.message.RPCParamTarget@101639ae
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Popped element stack to org.apache.axis.message.SOAPBody:Body
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Exit: DeserializationContext::endElement()
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Exit: Call::invoke(RPCElement)
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  Exit: Call::invoke(ns, meth, args)
+2021-08-02 20:08:14  [ main:10766 ] - [ DEBUG ]  axis.Call.invoke: 2112 WsCreateBill
+2021-08-02 20:08:14  [ main:10766 ] - [ INFO ]  Respuesta de WS facturas: /app/app_interfaz/DOC1data/SV/ImprCAM_209832868.pdf
+2021-08-02 20:08:14  [ main:10766 ] - [ INFO ]  OBJETO FACTURAS: 209832868
+2021-08-02 20:08:14  [ main:10767 ] - [ INFO ]  Resultado de consumo: 
+2021-08-02 20:08:14  [ main:10767 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
