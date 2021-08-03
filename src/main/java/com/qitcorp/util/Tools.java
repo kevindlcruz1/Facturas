@@ -8,8 +8,8 @@ import com.qitcorp.model.TcFacturasVantiveModel;
 public class Tools {
 	
 	
-	public static final String facturasVantive = "src/main/resources/config.properties";
-	//public static final String tc_facturas_vantive = "config.properties";
+	//public static final String facturasVantive = "src/main/resources/config.properties";
+	public static final String facturasVantive = "config.properties";
 	
 	public static final String obtenerFacturasVantive = "select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,"
 			+ "  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,"
@@ -18,8 +18,6 @@ public class Tools {
 			+ "  FEC_VENCIMIENTO, TCGFACTURAID, TCCORTECAJAID, TESALMACENESINVID, DISTRIBUIDOR, PUNTO_VENTA, VENDEDOR, DES_ESTATUSTRIB,"
 			+ "  CREDITO_FISCAL, GIRO, NUMERO_IVA, DESCUENTO, LIQUIDADO_COBROS, FECHA_LIQ_COBROS, MONTO_FINAL, TCRETENCIONID, VALOR_RETENCION,"
 			+ "  ENVIO_RI, FACTURA_PROCESADA, CONTRIBUCION_SEG FROM tc_facturas_vantive_vw ";
-	
-	
 	
 	//Obtener parametro para WS
 		/*public static String obtenerParametro(String parametro, List<TcFacturasVantiveModel> parametros) {
