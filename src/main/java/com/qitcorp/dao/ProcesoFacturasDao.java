@@ -44,8 +44,9 @@ public class ProcesoFacturasDao {
 		} catch (Exception e) {
 			logger.error(e);
 		} finally {
-			logger.info("se manda a llamar el metodo de finaliza conexion en obtenerParametrosWS");
+			
 			finalizaConexion(conn, ps, null, rst);
+			logger.info("se manda a llamar el metodo de finaliza conexion en obtenerParametrosWS");
 		}
 
 		return listResult;
@@ -72,14 +73,15 @@ public class ProcesoFacturasDao {
 		} catch (Exception e) {
 			logger.error(e);
 		} finally {
-			logger.info("se manda a llamar el metodo de finaliza conexion en obtenerFacturasVantive");
+		
 			finalizaConexion(conn, null, stmt, rst);
+			logger.info("se manda a llamar el metodo de finaliza conexion en obtenerFacturasVantive");
 					}
 		return lst;
 
 	}
 
-	private static void finalizaConexion(Connection conn, Object object, Statement stmt, ResultSet rst) {
+	private static void finalizaConexion(Connection conn, PreparedStatement ps, Statement stmt, ResultSet rst) {
 		if (rst != null)
 			try {
 				rst.close();
@@ -100,8 +102,9 @@ public class ProcesoFacturasDao {
 			}
 		if (conn != null)
 			try {
-				logger.info("cierra conexion en metodo finaliza conexion.");
+				
 				conn.close();
+				logger.info("cierra conexion en metodo finaliza conexion.");
 			} catch (SQLException e) {
 				logger.error(e);
 			}
@@ -131,11 +134,13 @@ public class ProcesoFacturasDao {
 		} finally {
 			try {
 				if (cmd != null)
-					logger.info("cierra conexion en metodo ejecutaFacturasSP.");
+					
 					cmd.close();
+				
 				if (conn != null)
-					logger.info("cierra conexion en metodo ejecutaFacturasSP2.");
+					
 					conn.close();
+				logger.info("cierra conexion en metodo ejecutaFacturasSP2.");
 			} catch (Exception e) {
 				logger.error(e);
 			}
