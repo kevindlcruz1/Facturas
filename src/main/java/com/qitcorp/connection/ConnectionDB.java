@@ -18,20 +18,21 @@ public class ConnectionDB {
 	public static Connection getConnection() {
 		Connection conn = null;
 		Properties pp = new Properties();
-		
+		logger.info("Antes de obtener conexion");
 		try {
 			pp.load(new FileReader(Tools.facturasVantive ));
 			String url = "jdbc:oracle:thin:@" + pp.getProperty("host") + ":" + pp.getProperty("port") + ":"
 					+ pp.getProperty("sid");
 			conn = DriverManager.getConnection(url, pp.getProperty("user"), pp.getProperty("password"));
+			logger.info("Obtiene la conexion de forma correcta: "+conn.getClientInfo());
 		} catch (SQLException e) {
-			logger.error(e);
+			logger.error("SQLException => ",e);
 		} catch (FileNotFoundException e) {
-			logger.error(e);
+			logger.error("FileNotFoundException => ", e);
 		} catch (IOException e) {
-			logger.error(e);
+			logger.error("IOException => ", e);
 		} catch (Exception e) {
-			logger.error(e);
+			logger.error("Exception => ", e);
 		}
 		return conn;
 	}

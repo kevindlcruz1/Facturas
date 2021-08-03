@@ -19,20 +19,20 @@ import com.qitcorp.dao.ProcesoFacturasDao;
 
 import com.qitcorp.model.TcFacturasVantiveModel;
 
-
-
-
-
 public class ProcesoFacturasController {
+
 	private static final Logger logger = Logger.getLogger("log4j.properties");
 
-	
-	
-	
+	public ProcesoFacturasController(){
+		logger.info("Ingresa a constructor de ProcesoFacturasController");
+	}
+
 	public void startProcessFactura() {
 		ProcesoFacturasDao objDao = new ProcesoFacturasDao();
-		List<TcFacturasVantiveModel> list = objDao.obtenerFacturasVantive();
 
+		logger.info("Antes de obtener la lista en metodo obtenerFacturasVantive");
+		List<TcFacturasVantiveModel> list = objDao.obtenerFacturasVantive();
+		logger.info("Obtiene lista de vista => "+list.size());
 		if (list != null && list.size() > 0) {
 			List<TcFacturasVantiveModel> parametros = ProcesoFacturasDao.obtenerParametrosWS();
 			Iterator<TcFacturasVantiveModel> iterator = list.iterator();
@@ -43,9 +43,6 @@ public class ProcesoFacturasController {
 				WsCreateBillResponse response = requestWsFacturasVantive(parametros, facturas);
 				logger.info("OBJETO FACTURAS: " + facturas.getBillRefNo());
 				logger.info("Resultado de consumo: "+response.getMensaje());
-
-				
-				
 			}
 		} else {
 			logger.warn("Lista de la vista vacia");
@@ -57,11 +54,8 @@ public class ProcesoFacturasController {
 				TcFacturasVantiveModel facturas) {
 			
 			boolean result = ProcesoFacturasDao.ejecutaFacturasSP(facturas.getTcFacturasCabId(), facturas.getBatchSize(), facturas.getOutBatchSize(), facturas.getStatus(), facturas.getRespuesta());
-			logger.info("[ProcesoFacturas] Ejecuta SP para id => "
-			+ facturas.getTcFacturasCabId() + " Resultado => " + result);	
-			
-			
-			
+			logger.info("[ProcesoFacturas] Ejecuta SP para id => "+ facturas.getTcFacturasCabId() + " Resultado => " + result);
+
 			return result;
 		}
 		
@@ -72,8 +66,7 @@ public class ProcesoFacturasController {
 
 			try {
 				wsExec = new WsDoc1Soap11Stub(new URL(servicio.getWsDoc1Soap11Address()), servicio);
-				
-				
+
 				//int BILL_REF_NO = facturas.getTCFACTURASCABID();
 				WsCreateBillRequest request = new WsCreateBillRequest();
 				request.setBill_ref_no(facturas.getBillRefNo());
@@ -81,9 +74,9 @@ public class ProcesoFacturasController {
 				logger.info("Parametro request: "+facturas.getBillRefNo());
 				
 				WsCreateBillResponse response = wsExec.wsCreateBill(request);
-						                              
-				
-						logger.info("Respuesta de WS facturas: "+response.getRuta_pdf());
+
+				logger.info("Respuesta de WS facturas: "+response.getRuta_pdf());
+
 				return response;
 			} catch (AxisFault e) {
 				logger.error(e);
