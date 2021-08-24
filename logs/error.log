@@ -3,4 +3,30 @@
  2021-07-23 08:37:31  [ main:9546 ] - [ ERROR ]  java.sql.SQLException: Missing IN or OUT parameter at index:: 2
  2021-07-23 08:37:34  [ main:12505 ] - [ ERROR ]  java.sql.SQLException: Missing IN or OUT parameter at index:: 2
  2021-07-23 08:37:37  [ main:15798 ] - [ ERROR ]  java.sql.SQLException: Missing IN or OUT parameter at index:: 2
+ 2021-08-24 13:55:22  [ main:18 ] - [ ERROR ]  FileNotFoundException => 
+ java.io.FileNotFoundException: config.properties (El sistema no puede encontrar el archivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at com.qitcorp.connection.ConnectionDB.getConnection(ConnectionDB.java:23)
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:61)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-08-24 13:55:22  [ main:24 ] - [ ERROR ]  Exception => 
+ java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:62)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-08-24 13:55:58  [ main:5320 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 13:58:59  [ main:5412 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 13:59:03  [ main:9864 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 14:02:00  [ main:4418 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 14:06:10  [ main:4581 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
  

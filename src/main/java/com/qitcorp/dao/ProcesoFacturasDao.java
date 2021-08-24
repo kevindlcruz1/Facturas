@@ -148,7 +148,7 @@ public class ProcesoFacturasDao {
 	}
 	public static boolean updateFacturasDet( ) {
 		boolean result = false;
-	
+	    logger.info("updateFacturasDet - inicio");
 		Connection conn = null;
 		CallableStatement cmd = null;
 		try {
@@ -177,6 +177,7 @@ public class ProcesoFacturasDao {
 				logger.error(e);
 			}
 		}
+		logger.info("updateFacturasDet - finaliza");
 		return result;
 	}
 }
