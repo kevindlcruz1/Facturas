@@ -30,7 +30,7 @@ public class ProcesoFacturasController {
 	public void startProcessFactura() {
 		ProcesoFacturasDao objDao = new ProcesoFacturasDao();
 
-		logger.info("Antes de obtener la lista en metodo obtenerFacturasVantive");
+		logger.debug("Antes de obtener la lista en metodo obtenerFacturasVantive");
 		List<TcFacturasVantiveModel> list = objDao.obtenerFacturasVantive();
 		logger.info("Obtiene lista de vista => "+list.size());
 		if (list != null && list.size() > 0) {
@@ -39,7 +39,7 @@ public class ProcesoFacturasController {
 			while (iterator.hasNext()) {
 				TcFacturasVantiveModel facturas = iterator.next();
 				//boolean response = procesaWSFacturasVantine(parametros, facturas);
-				logger.info("startProcessFactura-llama al metodo procesaWSFacturasVantine");
+				logger.debug("startProcessFactura-llama al metodo procesaWSFacturasVantine");
 				procesaWSFacturasVantine(parametros, facturas);
 				WsCreateBillResponse response = requestWsFacturasVantive(parametros, facturas);
 				logger.info("OBJETO FACTURAS: " + facturas.getBillRefNo());
@@ -53,7 +53,7 @@ public class ProcesoFacturasController {
 	 
 		public boolean procesaWSFacturasVantine(List<TcFacturasVantiveModel> parametros,
 				TcFacturasVantiveModel facturas) {
-			logger.info("procesaWSFacturasVantine - inicio");
+			logger.debug("procesaWSFacturasVantine - inicio");
 			boolean resultado = ProcesoFacturasDao.updateFacturasDet();
 			logger.info( "[updateFacturasDet] Finaliza update para registro => " + " Resultado => " + resultado);
 			

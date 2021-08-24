@@ -4,7 +4,7 @@ public class TcFacturasVantiveModel {
 	 public final static String VIEW = "TC_FACTURAS_VANTIVE_VW"; 
 	public final static String FIELD_TCFACTURASCABID = "TCFACTURASCABID";
 	
-	/*public final static String FIELD_SERIE_FAC = "SERIE_FAC";
+	public final static String FIELD_SERIE_FAC = "SERIE_FAC";
 	public final static String FIELD_NO_FAC ="NO_FAC";
 	public final static String FIELD_ACCOUNT_NO ="ACCOUNT_NO";
 	public final static String FIELD_TECUENTAID ="TECUENTAID";
@@ -26,9 +26,9 @@ public class TcFacturasVantiveModel {
 	public final static String FIELD_SWCREATEDBY ="SWCREATEDBY";
 	public final static String FIELD_TIMESTAMP ="TIMESTAMP";
 	public final static String FIELD_COD_ELEMENTOID ="COD_ELEMENTOID";
-	public final static String FIELD_TENUMSCONTRID ="TENUMSCONTRID";*/
+	public final static String FIELD_TENUMSCONTRID ="TENUMSCONTRID";
 	public final static String FIELD_BILL_REF_NO = "BILL_REF_NO";
-	/*public final static String FIELD_BILL_REF_RESETS ="BILL_REF_RESETS";
+	public final static String FIELD_BILL_REF_RESETS ="BILL_REF_RESETS";
 	public final static String FIELD_ID_RELACIONADO ="ID_RELACIONADO";
 	public final static String FIELD_TIPO_ID_RELACIONADO ="TIPO_ID_RELACIONADO";
 	public final static String FIELD_INTENTOS ="INTENTOS";
@@ -54,7 +54,7 @@ public class TcFacturasVantiveModel {
 	public final static String FIELD_ENVIO_RI ="ENVIO_RI";
 	public final static String FIELD_FACTURA_PROCESADA ="FACTURA_PROCESADA";
 	public final static String FIELD_CONTRIBUCION_SEG ="CONTRIBUCION_SEG";
-	public final static String FIELD_idDoc ="idDoc";*/
+	public final static String FIELD_idDoc ="idDoc";
 	
 	
 	
