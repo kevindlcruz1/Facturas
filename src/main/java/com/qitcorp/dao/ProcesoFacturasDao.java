@@ -146,4 +146,37 @@ public class ProcesoFacturasDao {
 		}
 		return result;
 	}
+	public static boolean updateFacturasDet( ) {
+		boolean result = false;
+	
+		Connection conn = null;
+		CallableStatement cmd = null;
+		try {
+			conn = ConnectionDB.getConnection();
+
+			cmd = conn.prepareCall(Tools.updateTcFacturasDet);
+			
+
+			result = cmd.executeUpdate() > 0;
+			// result1 = result;
+			logger.info("Ejecuta => " + Tools.updateTcFacturasDet + " => resultado: " + result);
+		} catch (Exception e) {
+			logger.error(e);
+		} finally {
+			try {
+				if (cmd != null)
+					
+					cmd.close();
+				conn.commit();
+				
+				if (conn != null)
+					
+					conn.close();
+				logger.info("cierra conexion en metodo updateTcFacturasDet.");
+			} catch (Exception e) {
+				logger.error(e);
+			}
+		}
+		return result;
+	}
 }

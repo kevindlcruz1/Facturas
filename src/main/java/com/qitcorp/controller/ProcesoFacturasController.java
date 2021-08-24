@@ -53,6 +53,9 @@ public class ProcesoFacturasController {
 		public boolean procesaWSFacturasVantine(List<TcFacturasVantiveModel> parametros,
 				TcFacturasVantiveModel facturas) {
 			
+			boolean resultado = ProcesoFacturasDao.updateFacturasDet();
+			logger.info( "[updateFacturasDet] Finaliza update para registro => " + " Resultado => " + resultado);
+			
 			boolean result = ProcesoFacturasDao.ejecutaFacturasSP(facturas.getTcFacturasCabId(), facturas.getBatchSize(), facturas.getOutBatchSize(), facturas.getStatus(), facturas.getRespuesta());
 			logger.info("[ProcesoFacturas] Ejecuta SP para id => "+ facturas.getTcFacturasCabId() + " Resultado => " + result);
 
