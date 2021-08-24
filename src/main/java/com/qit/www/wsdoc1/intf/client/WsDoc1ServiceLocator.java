@@ -22,7 +22,7 @@ public class WsDoc1ServiceLocator extends org.apache.axis.client.Service impleme
     }
 
     // Use to get a proxy class for WsDoc1Soap11
-    private java.lang.String WsDoc1Soap11_address = "http://10.231.128.139:7003/wsdoc1/";
+    private java.lang.String WsDoc1Soap11_address = "http://10.231.128.122:7003/wsdoc1/";
 
     public java.lang.String getWsDoc1Soap11Address() {
         return WsDoc1Soap11_address;

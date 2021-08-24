@@ -8,8 +8,8 @@ import com.qitcorp.model.TcFacturasVantiveModel;
 public class Tools {
 	
 	
-	public static final String facturasVantive = "src/main/resources/config.properties";
-	//public static final String facturasVantive = "config.properties";
+	//public static final String facturasVantive = "src/main/resources/config.properties";
+	public static final String facturasVantive = "config.properties";
 	
 	public static final String obtenerFacturasVantive = "select TCFACTURASCABID, SERIE_FAC, NO_FAC, ACCOUNT_NO, TECUENTAID,"
 			+ "  SWCUSTOMERID, FECHA_EMISION, USUARIO_EMISION, ESTADO, NIT, NOMBRE, DIRECCION, TIPO_FAC, TIPO_PAGO, EMISOR_PAGO,"

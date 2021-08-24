@@ -99,4 +99,18 @@
 
  2021-08-24 16:34:59  [ main:11885 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
 
+ 2021-08-24 16:41:49  [ main:4654 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 16:41:55  [ main:10507 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 16:42:01  [ main:16689 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 16:42:06  [ main:21410 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 16:42:11  [ main:25874 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 16:42:14  [ main:29807 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
+ 2021-08-24 16:42:19  [ main:34469 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00971: missing SET keyword
+
  
