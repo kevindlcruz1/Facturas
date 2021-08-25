@@ -36,12 +36,6 @@ public class Tools {
 			return "";
 		}*/
 		
-		public static final String FACCURAS_VANTIVE_SP = "{CALL SWBAPPS.TCG_FNC_WS_PKG.WS_CREA_DOC1_PRO(?,?,?,?,?)}";
-		
-		
-		public static final String updateTcFacturasDet ="update tc_facturas_det"
-				+ "set iva = PRECIO_FINAL-PRECIO_TOTAL "
-				+ "where tcfacturascabid > 23851310"
-				+ "and iva is null";
-		
+		public static final String FACCURAS_VANTIVE_SP = "{CALL SWBAPPS.TCG_FNC_WS_PKG.WS_CREA_DOC1_PRO(?,?,?,?,?)}";		
+						
 }
