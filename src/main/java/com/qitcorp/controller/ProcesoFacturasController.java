@@ -44,11 +44,11 @@ public class ProcesoFacturasController {
 				WsCreateBillResponse response = requestWsFacturasVantive(parametros, facturas);
 				logger.info("OBJETO FACTURAS: " + facturas.getBillRefNo());
 				logger.info("Resultado de consumo: "+response.getMensaje());
-			}
-		} else {
-			logger.warn("Lista de la vista vacia");
 		}
-
+	} else {
+			logger.warn("Lista de la vista vacia");
+	}
+			
 	}
 	 
 		public boolean procesaWSFacturasVantine(List<TcFacturasVantiveModel> parametros,
@@ -64,7 +64,7 @@ public class ProcesoFacturasController {
 		public WsCreateBillResponse requestWsFacturasVantive(List<TcFacturasVantiveModel> parametros,TcFacturasVantiveModel facturas ) {
 			WsDoc1Service servicio = new WsDoc1ServiceLocator();
 			WsDoc1 wsExec;
-
+			logger.debug("requestWsFacturasVantive() -  inicio");
 			try {
 				wsExec = new WsDoc1Soap11Stub(new URL(servicio.getWsDoc1Soap11Address()), servicio);
 
@@ -86,7 +86,7 @@ public class ProcesoFacturasController {
 			} catch (RemoteException e) {
 				logger.error(e);
 			}
-			
+			logger.debug("requestWsFacturasVantive() -  finaliza");
 			return null;
 		}
 		

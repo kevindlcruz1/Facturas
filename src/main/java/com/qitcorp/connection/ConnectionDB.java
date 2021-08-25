@@ -10,7 +10,7 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
-import com.qitcorp.util.Tools;
+import com.qitcorp.util.*;
 
 public class ConnectionDB {
 	private static final Logger logger = Logger.getLogger("log4j.properties");
@@ -20,7 +20,7 @@ public class ConnectionDB {
 		Properties pp = new Properties();
 		logger.info("Antes de obtener conexion");
 		try {
-			pp.load(new FileReader(Tools.facturasVantive ));
+			pp.load(new FileReader(Constants.facturasVantive));
 			String url = "jdbc:oracle:thin:@" + pp.getProperty("host") + ":" + pp.getProperty("port") + ":"
 					+ pp.getProperty("sid");
 			conn = DriverManager.getConnection(url, pp.getProperty("user"), pp.getProperty("password"));
